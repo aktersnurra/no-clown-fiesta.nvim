@@ -23,5 +23,5 @@ package.loaded['no-clown-fiesta.Whichkey'] = nil
 -- package.loaded['no-clown-fiesta.SymbolOutline'] = nil
 -- package.loaded['no-clown-fiesta.Misc'] = nil
 
-require("darkplus")
+require("no-clown-fiesta")
 EOF
