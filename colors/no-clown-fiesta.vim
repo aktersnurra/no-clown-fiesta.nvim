@@ -1,4 +1,5 @@
 " Author: Gustaf Rydholm <gustaf@gustafrydholm.xyz>
+
 lua << EOF
 package.loaded['no-clown-fiesta'] = nil
 package.loaded['no-clown-fiesta.Git'] = nil
