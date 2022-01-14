@@ -1,7 +1,7 @@
 local Alpha = {
-	AlphaHeader = { guifg = C.blue },
-	AlphaBody = { guifg = C.fg },
-	AlphaFooter = { guifg = C.light_gray },
+	AlphaHeader = { fg = C.blue },
+	AlphaBody = { fg = C.fg },
+	AlphaFooter = { fg = C.light_gray },
 }
 
 return Alpha
