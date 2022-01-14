@@ -1,5 +1,5 @@
 local Buffer = {
-	BufferCurrent = { fg = C.fg, bg = C.bg },
+	BufferCurrent = { fg = C.gray, bg = C.bg },
 	BufferCurrentIndex = { fg = C.fg, bg = C.bg },
 	BufferCurrentMod = { fg = C.info_yellow, bg = C.bg },
 	BufferCurrentSign = { fg = C.hint_blue, bg = C.bg },
