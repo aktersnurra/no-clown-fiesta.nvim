@@ -1,7 +1,6 @@
 " Author: Gustaf Rydholm <gustaf@gustafrydholm.xyz>
 lua << EOF
 package.loaded['no-clown-fiesta'] = nil
-package.loaded['no-clown-fiesta.Alpha'] = nil
 package.loaded['no-clown-fiesta.Git'] = nil
 package.loaded['no-clown-fiesta.highlights'] = nil
 package.loaded['no-clown-fiesta.LSP'] = nil
