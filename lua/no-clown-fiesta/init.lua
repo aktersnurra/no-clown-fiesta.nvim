@@ -11,7 +11,7 @@ Config = require "no-clown-fiesta.config"
 C = require "no-clown-fiesta.palette"
 
 local Buffer = require "no-clown-fiesta.Buffer"
-local Dashboard = require "no-clown-fiesta.Dashboard"
+local Alpha = require "no-clown-fiesta.Alpha"
 local Git = require "no-clown-fiesta.Git"
 local highlights = require "no-clown-fiesta.highlights"
 local LSP = require "no-clown-fiesta.LSP"
@@ -21,7 +21,7 @@ local Whichkey = require "no-clown-fiesta.Whichkey"
 
 local skeletons = {
   Buffer,
-  Dashboard,
+  Alpha,
   Git,
   highlights,
   markdown,
