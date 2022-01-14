@@ -10,7 +10,6 @@ local util = require("no-clown-fiesta.util")
 Config = require("no-clown-fiesta.config")
 C = require("no-clown-fiesta.palette")
 
-local Buffer = require("no-clown-fiesta.Buffer")
 local Alpha = require("no-clown-fiesta.Alpha")
 local Git = require("no-clown-fiesta.Git")
 local highlights = require("no-clown-fiesta.highlights")
@@ -20,7 +19,6 @@ local Treesitter = require("no-clown-fiesta.Treesitter")
 local Whichkey = require("no-clown-fiesta.Whichkey")
 
 local skeletons = {
-	Buffer,
 	Alpha,
 	Git,
 	highlights,
