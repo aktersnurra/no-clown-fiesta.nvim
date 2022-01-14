@@ -8,5 +8,5 @@ package.loaded['no-clown-fiesta.Whichkey'] = nil
 package.loaded['no-clown-fiesta.Git'] = nil
 package.loaded['no-clown-fiesta.LSP'] = nil
 
-lua require("no-clown-fiesta")
+require("no-clown-fiesta")
 EOF
