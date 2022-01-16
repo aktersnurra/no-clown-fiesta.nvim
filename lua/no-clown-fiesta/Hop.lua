@@ -1,6 +1,6 @@
 local Hop = {
-	HopNextKey = { fg = C.yellow },
-	HopNextKey1 = { fg = C.blue },
+	HopNextKey = { fg = C.cyan, style = "bold" },
+	HopNextKey1 = { fg = C.red, style = "bold" },
 	HopNextKey2 = { fg = C.gray_blue },
 	HopUnmatched = { fg = C.gray },
 }
