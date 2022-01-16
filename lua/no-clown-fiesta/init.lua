@@ -11,6 +11,7 @@ Config = require("no-clown-fiesta.config")
 C = require("no-clown-fiesta.palette")
 
 local Git = require("no-clown-fiesta.Git")
+local Hop = require("no-clown-fiesta.Hop")
 local highlights = require("no-clown-fiesta.highlights")
 local LSP = require("no-clown-fiesta.LSP")
 local markdown = require("no-clown-fiesta.markdown")
@@ -19,6 +20,7 @@ local Whichkey = require("no-clown-fiesta.Whichkey")
 
 local skeletons = {
 	Git,
+    Hop,
 	highlights,
 	markdown,
 	LSP,
