@@ -1,6 +1,6 @@
 local NvimTree = {
 	NvimTreeFolderIcon = { fg = C.blue },
-	NvimTreeIndentMarker = { fg = C.bg },
+	NvimTreeIndentMarker = { fg = C.bg, bg = C.accent },
 	NvimTreeNormal = { fg = C.light_gray, bg = C.bg },
 	NvimTreeVertSplit = { fg = C.alt_bg, bg = C.alt_bg },
 	NvimTreeFolderName = { fg = C.blue },
@@ -19,7 +19,7 @@ local NvimTree = {
 	NvimTreeGitMerge = { fg = C.info_yellow },
 	NvimTreeGitDirty = { fg = C.info_yellow },
 	NvimTreeSymlink = { fg = C.cyan },
-	NvimTreeRootFolder = { fg = C.bg, style = "bold" },
+	NvimTreeRootFolder = { fg = C.fg, style = "bold" },
 	NvimTreeExecFile = { fg = C.green },
 }
 
