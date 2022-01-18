@@ -1,8 +1,7 @@
 -- Colorscheme for lualine
 
 local colors = {
-	bg = "#151515",
-	alt_bg = "#171717",
+	bg = "#171717",
 	fg = "#D0D0D0",
 	grey = "#D0D0D0",
 	blue = "#569CD6",
@@ -21,14 +20,14 @@ local colors = {
 
 return {
 	normal = {
-		a = { fg = colors.fg, bg = colors.alt_bg, gui = "bold" },
-		b = { fg = colors.fg, bg = colors.alt_bg },
-		c = { fg = colors.fg, bg = colors.alt_bg },
+		a = { fg = colors.fg, bg = colors.bg, gui = "bold" },
+		b = { fg = colors.fg, bg = colors.bg },
+		c = { fg = colors.fg, bg = colors.bg },
 	},
-	insert = { a = { fg = colors.fg, bg = colors.alt_bg, gui = "bold" } },
-	visual = { a = { fg = colors.fg, bg = colors.alt_bg, gui = "bold" } },
-	command = { a = { fg = colors.fg, bg = colors.alt_bg, gui = "bold" } },
-	replace = { a = { fg = colors.fg, bg = colors.alt_bg, gui = "bold" } },
+	insert = { a = { fg = colors.fg, bg = colors.bg, gui = "bold" } },
+	visual = { a = { fg = colors.fg, bg = colors.bg, gui = "bold" } },
+	command = { a = { fg = colors.fg, bg = colors.bg, gui = "bold" } },
+	replace = { a = { fg = colors.fg, bg = colors.bg, gui = "bold" } },
 	inactive = {
 		a = { fg = colors.fg, bg = colors.bg },
 		b = { fg = colors.fg, bg = colors.bg },
