@@ -1,8 +1,8 @@
 local NvimTree = {
 		NvimTreeFolderIcon = {fg = C.blue, },
 		NvimTreeIndentMarker = {fg = C.bg, },
-		NvimTreeNormal = {fg = C.light_gray, bg = C.gray, },
-		NvimTreeVertSplit = {fg = C.alt_bg, bg = C.alt_bg, },
+		NvimTreeNormal = {fg = C.light_gray, bg = C.bg, },
+		NvimTreeVertSplit = {fg = C.bg, bg = C.bg, },
 		NvimTreeFolderName = {fg = C.blue, },
 		NvimTreeOpenedFolderName = {fg = C.blue, style = "bold,italic", },
 		NvimTreeEmptyFolderName = {fg = C.gray, style = "italic", },
