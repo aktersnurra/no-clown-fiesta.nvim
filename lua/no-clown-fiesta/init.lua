@@ -15,6 +15,7 @@ local Hop = require("no-clown-fiesta.Hop")
 local highlights = require("no-clown-fiesta.highlights")
 local LSP = require("no-clown-fiesta.LSP")
 local markdown = require("no-clown-fiesta.markdown")
+local NvimTree = require("no-clown-fiesta.NvimTree")
 local Treesitter = require("no-clown-fiesta.Treesitter")
 local Whichkey = require("no-clown-fiesta.Whichkey")
 
@@ -23,6 +24,7 @@ local skeletons = {
     Hop,
 	highlights,
 	markdown,
+    NvimTree,
 	LSP,
 	Treesitter,
 	Whichkey,
