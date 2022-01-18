@@ -5,6 +5,7 @@ local colors = {
 	accent = "#202020",
 	white = "#F2F6F3",
 	gray = "#373737",
+    medium_gray = "#505050",
 	light_gray = "#D0D0D0",
 	blue = "#A5D6FF",
 	gray_blue = "#5F819D",
