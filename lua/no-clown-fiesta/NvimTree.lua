@@ -23,6 +23,10 @@ local NvimTree = {
 	NvimTreeExecFile = { fg = C.green },
 	NvimTreeStatusLine = { fg = C.alt_bg },
 	NvimTreeStatusNC = { fg = C.alt_bg },
+	NvimTreeLspDiagnosticsErr = { fg = C.error_red },
+	NvimTreeLspDiagnosticsHint = { fg = C.hint_blue },
+	NvimTreeLspDiagnosticsInformation = { fg = C.info_yellow },
+	NvimTreeLspDiagnosticsWarning = { fg = C.warning_orange },
 }
 
 return NvimTree
