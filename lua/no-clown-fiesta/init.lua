@@ -23,13 +23,13 @@ local Whichkey = require("no-clown-fiesta.Whichkey")
 
 local skeletons = {
 	Git,
-    Hop,
+	Hop,
 	highlights,
 	markdown,
-    NvimTree,
+	NvimTree,
 	LSP,
-    StatusLine,
-    Telescope,
+	StatusLine,
+	Telescope,
 	Treesitter,
 	Whichkey,
 }
