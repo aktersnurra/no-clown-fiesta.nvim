@@ -10,10 +10,11 @@ An attempt at a color scheme that does not look like a clown puked up the source
 Git
 Hop
 LSP
-NvimTree
-StatusLine (the default non custom one)
 Lualine
-Treesitter
-WhichKey
 Markdown
+NvimTree
+Telescope
+Treesitter
+StatusLine (the default non custom one)
+WhichKey
 ```
