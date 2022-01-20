@@ -20,7 +20,7 @@ local Treesitter = {
 	TSBoolean = { fg = C.blue },
 	TSCharacter = { fg = C.light_green },
 	TSError = { fg = C.error_red },
-	TSFunction = { fg = C.white },
+	TSFunction = { fg = C.cyan },
 	TSFuncBuiltin = { fg = C.white },
 	TSMethod = { fg = C.white },
 	TSConstMacro = { fg = C.white },
