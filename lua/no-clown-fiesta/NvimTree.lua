@@ -22,6 +22,7 @@ local NvimTree = {
 	NvimTreeRootFolder = { fg = C.fg, style = "bold" },
 	NvimTreeExecFile = { fg = C.green },
 	NvimTreeStatusLine = { fg = C.alt_bg, bg = C.alt_bg },
+	NvimTreeStatusLineNC = { fg = C.alt_bg, bg = C.alt_bg },
 	NvimTreeStatusNC = { fg = C.alt_bg, bg = C.alt_bg },
 	NvimTreeLspDiagnosticsErr = { fg = C.error_red },
 	NvimTreeLspDiagnosticsHint = { fg = C.hint_blue },
