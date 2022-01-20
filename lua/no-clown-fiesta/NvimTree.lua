@@ -21,8 +21,8 @@ local NvimTree = {
 	NvimTreeSymlink = { fg = C.cyan },
 	NvimTreeRootFolder = { fg = C.fg, style = "bold" },
 	NvimTreeExecFile = { fg = C.green },
-    NvimTreeStatusLine = { bg = C.alt_bg },
-    NvimTreeStatusNC = { bg = C.alt_bg },
+	NvimTreeStatusLine = { fg = C.alt_bg },
+	NvimTreeStatusNC = { fg = C.alt_bg },
 }
 
 return NvimTree
