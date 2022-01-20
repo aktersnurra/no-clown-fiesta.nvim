@@ -9,6 +9,7 @@ package.loaded['no-clown-fiesta.LSP'] = nil
 package.loaded['no-clown-fiesta.markdown'] = nil
 package.loaded['no-clown-fiesta.NvimTree'] = nil
 package.loaded['no-clown-fiesta.StatusLine'] = nil
+package.loaded['no-clown-fiesta.Telescope'] = nil
 package.loaded['no-clown-fiesta.Treesitter'] = nil
 package.loaded['no-clown-fiesta.Whichkey'] = nil
 
