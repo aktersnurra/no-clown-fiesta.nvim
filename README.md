@@ -6,15 +6,13 @@ An attempt at a color scheme that does not look like a clown puked up the source
 
 ## Supported Plugins
 
-```
-Git
-Hop
-LSP
-Lualine
-Markdown
-NvimTree
-Telescope
-Treesitter
-StatusLine (the default non custom one)
-WhichKey
-```
+- Git
+- Hop
+- LSP
+- Lualine
+- Markdown
+- NvimTree
+- Telescope
+- Treesitter
+- StatusLine (the default non custom one)
+- WhichKey
