@@ -1,0 +1,11 @@
+repos:
+  - repo: https://github.com/JohnnyMorganz/StyLua
+    rev: v0.11.3
+    hooks:
+      - id: stylua
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v1.2.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+        args: []
