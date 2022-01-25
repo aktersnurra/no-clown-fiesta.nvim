@@ -10,6 +10,7 @@ local util = require "no-clown-fiesta.util"
 Config = require "no-clown-fiesta.config"
 C = require "no-clown-fiesta.palette"
 
+local Alpha = require "no-clown-fiesta.Alpha"
 local Git = require "no-clown-fiesta.Git"
 local Hop = require "no-clown-fiesta.Hop"
 local highlights = require "no-clown-fiesta.highlights"
@@ -22,6 +23,7 @@ local Treesitter = require "no-clown-fiesta.Treesitter"
 local Whichkey = require "no-clown-fiesta.Whichkey"
 
 local skeletons = {
+  Alpha,
   Git,
   Hop,
   highlights,

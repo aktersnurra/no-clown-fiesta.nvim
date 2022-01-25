@@ -2,6 +2,7 @@
 
 lua << EOF
 package.loaded['no-clown-fiesta'] = nil
+package.loaded['no-clown-fiesta.Alpha'] = nil
 package.loaded['no-clown-fiesta.Git'] = nil
 package.loaded['no-clown-fiesta.Hop'] = nil
 package.loaded['no-clown-fiesta.highlights'] = nil
