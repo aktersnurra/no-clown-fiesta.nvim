@@ -27,6 +27,7 @@ local colors = {
   warning_orange = "#F4BF75",
   info_yellow = "#F4BF75",
   hint_blue = "#A5D6FF",
+  hint_green = "#90A959",
   purple_test = "#ff00ff",
   cyan_test = "#00ffff",
 }
