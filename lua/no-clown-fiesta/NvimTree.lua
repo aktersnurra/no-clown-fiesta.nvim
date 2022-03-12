@@ -1,5 +1,5 @@
 local NvimTree = {
-  NvimTreeFolderIcon = { fg = C.beige },
+  NvimTreeFolderIcon = { fg = C.white },
   NvimTreeIndentMarker = { fg = C.alt_bg },
   NvimTreeNormal = { fg = C.light_gray, bg = C.alt_bg },
   NvimTreeVertSplit = { fg = C.alt_bg, bg = C.alt_bg },

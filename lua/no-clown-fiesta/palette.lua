@@ -18,7 +18,6 @@ local colors = {
   purple = "#AA749F",
   pale_purple = "#A5D6FF",
   magenta = "#AA759F",
-  beige = "#D3BC8D",
   cursor_fg = "#D0D0D0",
   cursor_bg = "#151515",
   sign_add = "#A1B56C",
