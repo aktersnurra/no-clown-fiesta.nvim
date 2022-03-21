@@ -38,7 +38,7 @@ local Treesitter = {
   TSTagDelimiter = { fg = C.white },
   TSPunctBracket = { fg = C.white },
   TSPunctSpecial = { fg = C.medium_gray },
-  TSString = { fg = C.blue },
+  TSString = { fg = C.light_gray },
   TSStringRegex = { fg = C.medium_gray },
   TSStringEscape = { fg = C.medium_gray },
   TSTag = { fg = C.pale_purple },
