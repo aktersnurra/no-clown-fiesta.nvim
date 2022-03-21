@@ -8,7 +8,7 @@ local Treesitter = {
   TSConditional = { fg = C.gray_blue },
   TSException = { fg = C.red },
   TSInclude = { fg = C.gray_blue },
-  TSKeyword = { fg = C.blue },
+  TSKeyword = { fg = C.gray_blue },
   TSKeywordFunction = { fg = C.gray_blue },
   TSLabel = { fg = C.white },
   TSNamespace = { fg = C.white },
