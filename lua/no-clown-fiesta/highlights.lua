@@ -94,6 +94,7 @@ local highlights = {
   TabLine = { fg = C.gray, bg = C.alt_bg },
   TabLineSel = { fg = C.white, bg = C.alt_bg },
   TabLineFill = { fg = C.white, bg = C.alt_bg },
+  WinSeparator = { fg = C.medium_gray, bg = C.bg },
 }
 
 return highlights
