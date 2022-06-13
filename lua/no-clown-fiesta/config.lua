@@ -12,8 +12,6 @@ local function opt(key, default)
   return vim.g[key]
 end
 
--- something something
-
 config = {
   transparent_background = opt("transparent_background", false) and "NONE" or C.bg,
   italic_comments = opt("italic_comments", true) and "italic" or "NONE",
