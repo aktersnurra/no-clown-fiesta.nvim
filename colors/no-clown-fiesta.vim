@@ -1,18 +1,7 @@
-" Author: Gustaf Rydholm <gustaf@gustafrydholm.xyz>
-
 lua << EOF
-package.loaded['no-clown-fiesta'] = nil
-package.loaded['no-clown-fiesta.Alpha'] = nil
-package.loaded['no-clown-fiesta.Git'] = nil
-package.loaded['no-clown-fiesta.Hop'] = nil
-package.loaded['no-clown-fiesta.highlights'] = nil
-package.loaded['no-clown-fiesta.LSP'] = nil
-package.loaded['no-clown-fiesta.markdown'] = nil
-package.loaded['no-clown-fiesta.NvimTree'] = nil
-package.loaded['no-clown-fiesta.StatusLine'] = nil
-package.loaded['no-clown-fiesta.Telescope'] = nil
-package.loaded['no-clown-fiesta.Treesitter'] = nil
-package.loaded['no-clown-fiesta.Whichkey'] = nil
+for k in pairs(package.loaded) do
+  if k:match(".*no-clown-fiesta.*") then package.loaded[k] = nil end
+end
 
-require("no-clown-fiesta")
+require('no-clown-fiesta').setup()
 EOF

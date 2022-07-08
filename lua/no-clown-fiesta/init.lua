@@ -16,6 +16,7 @@ local Hop = require "no-clown-fiesta.Hop"
 local highlights = require "no-clown-fiesta.highlights"
 local LSP = require "no-clown-fiesta.LSP"
 local markdown = require "no-clown-fiesta.markdown"
+local Neogit = require "no-clown-fiesta.Neogit"
 local NvimTree = require "no-clown-fiesta.NvimTree"
 local NvimCmp = require "no-clown-fiesta.NvimCmp"
 local StatusLine = require "no-clown-fiesta.StatusLine"
@@ -29,6 +30,7 @@ local skeletons = {
   Hop,
   highlights,
   markdown,
+  Neogit,
   NvimTree,
   NvimCmp,
   LSP,
