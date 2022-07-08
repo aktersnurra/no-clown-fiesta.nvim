@@ -7,8 +7,8 @@ vim.o.termguicolors = true
 vim.g.colors_name = "no-clown-fiesta"
 
 local util = require "no-clown-fiesta.util"
-Config = require "no-clown-fiesta.config"
 C = require "no-clown-fiesta.palette"
+Config = require "no-clown-fiesta.config"
 
 local Alpha = require "no-clown-fiesta.Alpha"
 local Git = require "no-clown-fiesta.Git"
