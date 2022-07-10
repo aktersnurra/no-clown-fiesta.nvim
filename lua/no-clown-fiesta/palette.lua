@@ -28,8 +28,10 @@ local colors = {
   info_yellow = "#F4BF75",
   hint_blue = "#A5D6FF",
   hint_green = "#90A959",
-  neogit_add_bg = "#616346",
-  neogit_del_bg = "#613434",
+  neogit_light_green = "#90A959",
+  neogit_green = "#5f703b",
+  neogit_light_red = "#AC4142",
+  neogit_red = "#5f2424",
   purple_test = "#ff00ff",
   cyan_test = "#00ffff",
 }
