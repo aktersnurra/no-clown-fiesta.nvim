@@ -4,7 +4,7 @@ local Neogit = {
   NeogitNotificationError = { fg = C.sign_delete },
   NeogitDiffAddHighlight = { fg = C.sign_add, bg = C.neogit_light_green },
   NeogitDiffDeleteHighlight = { fg = C.sign_delete, bg = C.neogit_light_red },
-  NeogitDiffContextHighlight = { fg = C.light_gray, bg = C.alt_bg },
+  NeogitDiffContextHighlight = { fg = C.fg, bg = C.bg },
   NeogitHunkHeader = { fg = C.fg, bg = C.alt_bg },
   NeogitHunkHeaderHighlight = { fg = C.fg, bg = C.accent },
   NeogitDiffAdd = { fg = C.sign_add, bg = C.neogit_green },
