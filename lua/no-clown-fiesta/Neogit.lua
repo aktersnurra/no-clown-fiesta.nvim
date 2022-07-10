@@ -1,7 +1,7 @@
 local Neogit = {
-  NeogitNotificationInfo = { fg = C.sign_add },
+  NeogitNotificationInfo = { fg = C.neogit_add_bg },
   NeogitNotificationWarning = { fg = C.warning_orange },
-  NeogitNotificationError = { fg = C.sign_delete },
+  NeogitNotificationError = { fg = C.neogit_del_bg },
   NeogitDiffAddHighlight = { fg = C.sign_add, bg = C.neogit_add_bg },
   NeogitDiffDeleteHighlight = { fg = C.sign_delete, bg = C.neogit_del_bg },
   NeogitDiffContextHighlight = { fg = C.fg, bg = C.alt_bg },
