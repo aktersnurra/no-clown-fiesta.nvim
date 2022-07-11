@@ -6,7 +6,7 @@ local Neogit = {
   NeogitDiffDeleteHighlight = { fg = C.sign_delete, bg = C.neogit_light_red },
   NeogitDiffContextHighlight = { fg = C.fg, bg = C.accent },
   NeogitHunkHeader = { fg = C.fg, bg = C.alt_bg },
-  NeogitHunkHeaderHighlight = { fg = C.fg, bg = C.accent },
+  NeogitHunkHeaderHighlight = { fg = C.fg, bg = C.gray },
   NeogitDiffAdd = { fg = C.sign_add, bg = C.neogit_green },
   NeogitDiffDelete = { fg = C.sign_delete, bg = C.neogit_red },
 }
