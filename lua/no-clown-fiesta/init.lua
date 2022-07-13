@@ -14,6 +14,7 @@ local Alpha = require "no-clown-fiesta.Alpha"
 local Git = require "no-clown-fiesta.Git"
 local Hop = require "no-clown-fiesta.Hop"
 local highlights = require "no-clown-fiesta.highlights"
+local Lir = require "no-clown-fiesta.Lir"
 local LSP = require "no-clown-fiesta.LSP"
 local markdown = require "no-clown-fiesta.markdown"
 local Neogit = require "no-clown-fiesta.Neogit"
@@ -33,6 +34,7 @@ local skeletons = {
   Neogit,
   NvimTree,
   NvimCmp,
+  Lir,
   LSP,
   StatusLine,
   Telescope,
