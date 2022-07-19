@@ -61,7 +61,7 @@ local highlights = {
   Number = { fg = C.red },
   Boolean = { fg = C.red },
   Float = { fg = C.red },
-  Identifier = { fg = C.blue },
+  Identifier = { fg = C.white },
   Function = { fg = C.purple, style = Config.italic_functions },
   Operator = { fg = C.orange },
   Type = { fg = C.white },
