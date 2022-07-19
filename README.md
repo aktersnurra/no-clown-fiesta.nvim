@@ -8,11 +8,15 @@ NB if anyone else use this colorscheme, it could be wise to fix the commit. At t
 
 ## Supported Plugins
 
+- Alpha
 - Git
 - Hop
+- Lir
 - LSP
 - Lualine
 - Markdown
+- Neogit
+- NvimCmp
 - NvimTree
 - Telescope
 - Treesitter

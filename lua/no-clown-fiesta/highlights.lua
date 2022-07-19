@@ -95,6 +95,7 @@ local highlights = {
   TabLineSel = { fg = C.white, bg = C.alt_bg },
   TabLineFill = { fg = C.white, bg = C.alt_bg },
   WinSeparator = { fg = C.medium_gray, bg = C.bg },
+  DiagnosticFloatingError = { fg = C.error_red },
 }
 
 return highlights

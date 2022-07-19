@@ -1,12 +1,14 @@
 local Neogit = {
-  NeogitNotificationInfo = { fg = C.green },
+  NeogitNotificationInfo = { fg = C.sign_add },
   NeogitNotificationWarning = { fg = C.warning_orange },
-  NeogitNotificationError = { fg = C.red },
-  NeogitDiffAddHighlight = { fg = C.green, bg = C.alt_bg },
-  NeogitDiffDeleteHighlight = { fg = C.red, bg = C.alt_bg },
-  NeogitDiffContextHighlight = { fg = C.fg, bg = C.alt_bg },
+  NeogitNotificationError = { fg = C.sign_delete },
+  NeogitDiffAddHighlight = { fg = C.sign_add, bg = C.neogit_light_green },
+  NeogitDiffDeleteHighlight = { fg = C.sign_delete, bg = C.neogit_light_red },
+  NeogitDiffContextHighlight = { fg = C.fg, bg = C.accent },
   NeogitHunkHeader = { fg = C.fg, bg = C.alt_bg },
-  NeogitHunkHeaderHighlight = { fg = C.fg, bg = C.alt_bg },
+  NeogitHunkHeaderHighlight = { fg = C.fg, bg = C.gray },
+  NeogitDiffAdd = { fg = C.sign_add, bg = C.neogit_green },
+  NeogitDiffDelete = { fg = C.sign_delete, bg = C.neogit_red },
 }
 
 return Neogit
