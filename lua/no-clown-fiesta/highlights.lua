@@ -80,7 +80,7 @@ local highlights = {
   Macro = { fg = C.cyan },
   PreCondit = { fg = C.medium_gray },
   Special = { fg = C.white },
-  SpecialChar = { fg = C.white },
+  SpecialChar = { fg = C.medium_gray_blue },
   Tag = { fg = C.pale_purple },
   Debug = { fg = C.red },
   Delimiter = { fg = C.gray },
