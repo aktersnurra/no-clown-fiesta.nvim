@@ -55,7 +55,7 @@ local highlights = {
   EndOfBuffer = { fg = C.bg },
   NonText = { fg = C.bg },
   Variable = { fg = C.white, style = Config.italic_variables },
-  String = { fg = C.light_gray_blue },
+  String = { fg = C.medium_gray_blue },
   Character = { fg = C.light_green },
   Constant = { fg = C.orange },
   Number = { fg = C.red },
