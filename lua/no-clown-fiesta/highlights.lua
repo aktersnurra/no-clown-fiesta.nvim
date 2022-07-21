@@ -57,7 +57,7 @@ local highlights = {
   Variable = { fg = C.white, style = Config.italic_variables },
   String = { fg = C.medium_gray_blue },
   Character = { fg = C.light_green },
-  Constant = { fg = C.orange },
+  Constant = { fg = C.red },
   Number = { fg = C.red },
   Boolean = { fg = C.red },
   Float = { fg = C.red },
