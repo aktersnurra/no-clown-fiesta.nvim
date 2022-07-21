@@ -39,3 +39,4 @@ These are all the available variables and their default values.
 | italic_keywords | false |
 | italic_functions | false |
 | italic_variables | false |
+| bold_type | false |

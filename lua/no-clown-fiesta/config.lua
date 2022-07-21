@@ -18,6 +18,7 @@ config = {
   italic_keywords = opt("italic_keywords", false) and "italic" or "NONE",
   italic_functions = opt("italic_functions", false) and "italic" or "NONE",
   italic_variables = opt("italic_variables", false) and "italic" or "NONE",
+  bold_type = opt("bold_type", false) and "bold" or "NONE",
 }
 
 return config
