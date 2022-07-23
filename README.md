@@ -2,7 +2,7 @@
 
 An attempt at a color scheme that does not look like a clown puked up the source code.
 
-![colorscheme](https://gustafrydholm.xyz/images/no-clown-fiesta.png)
+![image](https://gustafrydholm.xyz/images/no-clown-fiesta.png)
 
 ## Supported Plugins
 
