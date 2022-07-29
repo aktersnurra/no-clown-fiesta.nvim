@@ -21,20 +21,22 @@ An attempt at a color scheme that does not look like a clown puked up the source
 - StatusLine (the default non custom one)
 - WhichKey
 
-## Configuration
-It's possible to configure some preferences, for example:
+## Setup
+The default configuration is:
 
 ```lua
-vim.g.transparent_background = true
-vim.g.italic_comments = false
-```
 
-These are all the available variables and their default values.
-| Variable | Default |
-| --- | --- |
-| transparent_background | false |
-| italic_comments | true |
-| italic_keywords | false |
-| italic_functions | false |
-| italic_variables | false |
-| bold_type | false |
+{
+  transparent_background = palette.bg,
+  comments = "NONE",
+  keywords = "NONE",
+  functions = "NONE",
+  variables = "NONE",
+  type = "NONE",
+}
+```
+These can be overridden when activating the plugin, e.g.:
+
+```lua
+require "no-clown-fiesta".setup({ type = "bold,italic" })
+```
