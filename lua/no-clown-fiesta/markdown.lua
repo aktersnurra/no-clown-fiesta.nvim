@@ -1,27 +1,31 @@
-local markdown = {
-  markdownBlockquote = { fg = C.accent },
-  markdownBold = { fg = C.yellow, style = "bold" },
-  markdownCode = { fg = C.green },
-  markdownCodeBlock = { fg = C.green },
-  markdownCodeDelimiter = { fg = C.green },
-  markdownH1 = { fg = C.blue },
-  markdownH2 = { fg = C.blue },
-  markdownH3 = { fg = C.blue },
-  markdownH4 = { fg = C.blue },
-  markdownH5 = { fg = C.blue },
-  markdownH6 = { fg = C.blue },
-  markdownHeadingDelimiter = { fg = C.red },
-  markdownHeadingRule = { fg = C.accent },
-  markdownId = { fg = C.purple },
-  markdownIdDeclaration = { fg = C.blue },
-  markdownIdDelimiter = { fg = C.light_gray },
-  markdownLinkDelimiter = { fg = C.light_gray },
-  markdownItalic = { style = "italic" },
-  markdownLinkText = { fg = C.blue },
-  markdownListMarker = { fg = C.red },
-  markdownOrderedListMarker = { fg = C.red },
-  markdownRule = { fg = C.accent },
-  markdownUrl = { fg = C.cyan, style = "underline" },
-}
+local M = {}
 
-return markdown
+function M.highlight(palette)
+  return {
+    markdownBlockquote = { fg = palette.accent },
+    markdownBold = { fg = palette.yellow, style = "bold" },
+    markdownCode = { fg = palette.green },
+    markdownCodeBlock = { fg = palette.green },
+    markdownCodeDelimiter = { fg = palette.green },
+    markdownH1 = { fg = palette.blue },
+    markdownH2 = { fg = palette.blue },
+    markdownH3 = { fg = palette.blue },
+    markdownH4 = { fg = palette.blue },
+    markdownH5 = { fg = palette.blue },
+    markdownH6 = { fg = palette.blue },
+    markdownHeadingDelimiter = { fg = palette.red },
+    markdownHeadingRule = { fg = palette.accent },
+    markdownId = { fg = palette.purple },
+    markdownIdDeclaration = { fg = palette.blue },
+    markdownIdDelimiter = { fg = palette.light_gray },
+    markdownLinkDelimiter = { fg = palette.light_gray },
+    markdownItalic = { style = "italic" },
+    markdownLinkText = { fg = palette.blue },
+    markdownListMarker = { fg = palette.red },
+    markdownOrderedListMarker = { fg = palette.red },
+    markdownRule = { fg = palette.accent },
+    markdownUrl = { fg = palette.cyan, style = "underline" },
+  }
+end
+
+return M
