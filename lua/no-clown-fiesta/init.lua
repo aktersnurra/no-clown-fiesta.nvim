@@ -17,20 +17,34 @@ function M.setup(opts)
 
   local util = require "no-clown-fiesta.util"
   local palette = require "no-clown-fiesta.palette"
-  local alpha = require("no-clown-fiesta.alpha").highlight(palette)
-  local git = require("no-clown-fiesta.git").highlight(palette)
-  local hop = require("no-clown-fiesta.hop").highlight(palette)
   local highlights = require("no-clown-fiesta.highlights").highlight(palette, opts)
-  local lir = require("no-clown-fiesta.lir").highlight(palette)
-  local lsp = require("no-clown-fiesta.lsp").highlight(palette)
-  local markdown = require("no-clown-fiesta.markdown").highlight(palette)
-  local neogit = require("no-clown-fiesta.neogit").highlight(palette)
-  local nvimtree = require("no-clown-fiesta.nvim-tree").highlight(palette)
-  local nvimcmp = require("no-clown-fiesta.nvim-cmp").highlight(palette)
-  local statusline = require("no-clown-fiesta.statusline").highlight(palette)
-  local telescope = require("no-clown-fiesta.telescope").highlight(palette)
-  local treesitter = require("no-clown-fiesta.treesitter").highlight(palette, opts)
-  local whichkey = require("no-clown-fiesta.whichkey").highlight(palette)
+
+  local alpha = require("no-clown-fiesta.highlight-group.alpha").highlight(palette)
+  local git = require("no-clown-fiesta.highlight-group.git").highlight(palette)
+  local hop = require("no-clown-fiesta.highlight-group.hop").highlight(palette)
+  local lir = require("no-clown-fiesta.highlight-group.lir").highlight(palette)
+  local lsp = require("no-clown-fiesta.highlight-group.lsp").highlight(palette)
+  local markdown = require("no-clown-fiesta.highlight-group.markdown").highlight(
+    palette
+  )
+  local neogit = require("no-clown-fiesta.highlight-group.neogit").highlight(palette)
+  local nvimtree = require("no-clown-fiesta.highlight-group.nvim-tree").highlight(
+    palette
+  )
+  local nvimcmp = require("no-clown-fiesta.highlight-group.nvim-cmp").highlight(palette)
+  local statusline = require("no-clown-fiesta.highlight-group.statusline").highlight(
+    palette
+  )
+  local telescope = require("no-clown-fiesta.highlight-group.telescope").highlight(
+    palette
+  )
+  local treesitter = require("no-clown-fiesta.highlight-group.treesitter").highlight(
+    palette,
+    opts
+  )
+  local whichkey = require("no-clown-fiesta.highlight-group.whichkey").highlight(
+    palette
+  )
 
   local skeletons = {
     alpha,
