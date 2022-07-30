@@ -20,7 +20,7 @@ The default configuration is:
 These can be overridden when activating the plugin, e.g.:
 
 ```lua
-require "no-clown-fiesta".setup({ type = "bold,italic" })
+require("no-clown-fiesta").setup({ type = "bold,italic" })
 ```
 
 ## Supported Plugins
