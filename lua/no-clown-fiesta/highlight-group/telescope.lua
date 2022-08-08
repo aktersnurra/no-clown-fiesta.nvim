@@ -5,7 +5,7 @@ function M.highlight(palette)
     TelescopeNormal = { fg = palette.fg, bg = palette.bg },
     TelescopeSelection = { fg = palette.fg, bg = palette.accent },
     TelescopeMatching = { fg = palette.info_yellow, style = "bold" },
-    TelescopeBorder = { fg = palette.medium_gray, bg = palette.bg },
+    TelescopeBorder = { fg = palette.fg, bg = palette.bg },
   }
 end
 
