@@ -7,7 +7,7 @@ function M.highlight(palette, opts)
     MsgArea = { fg = palette.fg, bg = palette.bg },
     ModeMsg = { fg = palette.fg, bg = palette.bg },
     MsgSeparator = { fg = palette.fg, bg = palette.bg },
-    SpellBad = { sp = palette.error_red, undercurl = true },
+    SpellBad = { sp = palette.error_red, style = "underline" },
     SpellCap = { fg = palette.yellow, style = "underline" },
     SpellLocal = { fg = palette.green, style = "underline" },
     SpellRare = { fg = palette.purple, style = "underline" },
