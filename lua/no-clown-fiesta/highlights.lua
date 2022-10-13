@@ -33,7 +33,7 @@ function M.highlight(palette, opts)
     DiffAdd = { fg = palette.sign_add, bg = palette.neogit_green },
     DiffChange = {
       fg = palette.sign_change,
-      bg = palette.gray_blue,
+      bg = palette.neogit_blue,
     },
     DiffDelete = { fg = palette.sign_delete, bg = palette.neogit_red },
     QuickFixLine = { bg = palette.accent },

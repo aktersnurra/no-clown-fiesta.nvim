@@ -30,6 +30,7 @@ local colors = {
   hint_blue = "#A5D6FF",
   hint_green = "#90A959",
   neogit_light_green = "#4f5c32",
+  neogit_blue = "#33424f",
   neogit_green = "#3f4928",
   neogit_light_red = "#4f2929",
   neogit_red = "#3f2121",
