@@ -35,7 +35,7 @@ function M.highlight(palette, opts)
     DiffChange = {
       bg = palette.neogit_blue,
     },
-    DiffDelete = { bg = palette.neogit_red },
+    DiffDelete = { fg = palette.bg, bg = palette.neogit_red },
     QuickFixLine = { bg = palette.accent },
     PmenuSbar = { bg = palette.alt_bg },
     PmenuThumb = { bg = palette.light_gray },
