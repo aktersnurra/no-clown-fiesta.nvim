@@ -32,21 +32,6 @@ function M.highlight(palette)
     LspDiagnosticsInformation = { fg = palette.info_yellow },
     LspDiagnosticsInfo = { fg = palette.info_yellow },
     LspDiagnosticsHint = { fg = palette.hint_blue },
-    LspDiagnosticsUnderlineError = {
-      link = "DiagnosticUnderlineError",
-    },
-    LspDiagnosticsUnderlineWarning = {
-      link = "DiagnosticUnderlineWarn",
-    },
-    LspDiagnosticsUnderlineInformation = {
-      link = "DiagnosticUnderlineInfo",
-    },
-    LspDiagnosticsUnderlineInfo = {
-      link = "DiagnosticUnderlineInfo",
-    },
-    LspDiagnosticsUnderlineHint = {
-      link = "DiagnosticUnderlineHint",
-    },
     DiagnosticUnderlineError = {
       sp = palette.error_red,
       style = "undercurl",
