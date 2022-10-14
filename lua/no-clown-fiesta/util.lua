@@ -5,6 +5,7 @@ local function highlight(group, properties)
   local fg = properties.fg == nil and "" or "guifg=" .. properties.fg
   local sp = properties.sp == nil and "" or "guisp=" .. properties.sp
   local style = properties.style == nil and "" or "gui=" .. properties.style
+  local link = properties.link == nil and "" or "link=" .. properties.link
 
   local cmd = table.concat({
     "highlight",
@@ -13,6 +14,7 @@ local function highlight(group, properties)
     fg,
     sp,
     style,
+    link,
   }, " ")
 
   vim.api.nvim_command(cmd)
