@@ -46,13 +46,13 @@ function M.highlight(palette)
     },
     LspDiagnosticsUnderlineInfo = { sp = palette.hint_blue, style = "undercurl" },
     LspDiagnosticsUnderlineHint = { sp = palette.hint_blue, style = "undercurl" },
-    DiagnosticsUnderlineError = {
+    DiagnosticUnderlineError = {
       sp = palette.error_red,
       style = "underline",
     },
-    DiagnosticsUnderlineWarn = { sp = palette.warning_orange, style = "undercurl" },
-    DiagnosticsUnderlineInfo = { sp = palette.hint_blue, style = "undercurl" },
-    DiagnosticsUnderlineHint = { sp = palette.hint_blue, style = "undercurl" },
+    DiagnosticUnderlineWarn = { sp = palette.warning_orange, style = "undercurl" },
+    DiagnosticUnderlineInfo = { sp = palette.hint_blue, style = "undercurl" },
+    DiagnosticUnderlineHint = { sp = palette.hint_blue, style = "undercurl" },
     LspReferenceRead = { bg = "#36383F" },
     LspReferenceText = { bg = "#36383F" },
     LspReferenceWrite = { bg = "#36383f" },
