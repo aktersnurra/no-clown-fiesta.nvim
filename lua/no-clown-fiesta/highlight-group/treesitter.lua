@@ -5,7 +5,7 @@ function M.highlight(palette, opts)
     ["@comment"] = { fg = palette.medium_gray, style = opts.comments },
     ["@annotation"] = { fg = palette.white },
     ["@attribute"] = { fg = palette.white },
-    ["@constructor"] = { fg = palette.white },
+    ["@constructor"] = { fg = palette.gray_blue },
     ["@type"] = { fg = palette.white, style = opts.type },
     ["@type.builtin"] = { fg = palette.white },
     ["@conditional"] = { fg = palette.gray_blue },
