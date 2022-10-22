@@ -31,7 +31,7 @@ function M.highlight(palette, opts)
     ["@variable"] = { fg = palette.white, style = opts.variables },
     ["@variable.builtin"] = { fg = palette.white },
     ["@property"] = { fg = palette.gray_blue },
-    ["@operator"] = { fg = palette.gray_blue },
+    ["@operator"] = { fg = palette.red },
     ["@field"] = { fg = palette.white },
     ["@parameter"] = { fg = palette.white },
     ["@parameter.reference"] = { fg = palette.white },
