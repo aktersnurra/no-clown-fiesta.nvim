@@ -1,7 +1,7 @@
 local M = {}
 
 local function highlight(group, properties)
-  vim.api.nvim_set_hl(0, group, properties or {})
+  vim.api.nvim_set_hl(0, group, properties)
 end
 
 function M.initialise(skeleton)

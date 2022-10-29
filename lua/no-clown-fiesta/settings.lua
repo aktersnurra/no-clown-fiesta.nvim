@@ -14,7 +14,7 @@ local DEFAULT = {
 M.options = {}
 
 function M.set(options)
-  M.options = vim.tbl_extend("force", DEFAULT, options)
+  M.options = vim.tbl_extend("force", DEFAULT, options or {})
 end
 
 return M
