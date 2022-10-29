@@ -3,7 +3,7 @@ local M = {}
 function M.highlight(palette)
   return {
     markdownBlockquote = { fg = palette.accent },
-    markdownBold = { fg = palette.yellow, style = "bold" },
+    markdownBold = { fg = palette.yellow, bold = true },
     markdownCode = { fg = palette.green },
     markdownCodeBlock = { fg = palette.green },
     markdownCodeDelimiter = { fg = palette.green },
@@ -19,12 +19,12 @@ function M.highlight(palette)
     markdownIdDeclaration = { fg = palette.blue },
     markdownIdDelimiter = { fg = palette.light_gray },
     markdownLinkDelimiter = { fg = palette.light_gray },
-    markdownItalic = { style = "italic" },
+    markdownItalic = { italic = true },
     markdownLinkText = { fg = palette.blue },
     markdownListMarker = { fg = palette.red },
     markdownOrderedListMarker = { fg = palette.red },
     markdownRule = { fg = palette.accent },
-    markdownUrl = { fg = palette.cyan, style = "underline" },
+    markdownUrl = { fg = palette.cyan, underline = true },
   }
 end
 
