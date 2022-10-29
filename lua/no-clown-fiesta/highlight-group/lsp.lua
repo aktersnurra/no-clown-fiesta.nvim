@@ -6,20 +6,20 @@ function M.highlight(palette)
     LspReferenceText = { bg = "#36383F" },
     LspReferenceWrite = { bg = "#36383f" },
 
-    DiagnosticError = { fg = palette.error }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-    DiagnosticWarn = { fg = palette.warning }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-    DiagnosticInfo = { fg = palette.info }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-    DiagnosticHint = { fg = palette.hint }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+    DiagnosticError = { fg = palette.error },
+    DiagnosticWarn = { fg = palette.warning },
+    DiagnosticInfo = { fg = palette.info },
+    DiagnosticHint = { fg = palette.hint },
 
-    DiagnosticVirtualTextError = { fg = palette.error }, -- Used for "Error" diagnostic virtual text
-    DiagnosticVirtualTextWarn = { fg = palette.warning }, -- Used for "Warning" diagnostic virtual text
-    DiagnosticVirtualTextInfo = { fg = palette.info }, -- Used for "Information" diagnostic virtual text
-    DiagnosticVirtualTextHint = { fg = palette.hint }, -- Used for "Hint" diagnostic virtual text
+    DiagnosticVirtualTextError = { fg = palette.error },
+    DiagnosticVirtualTextWarn = { fg = palette.warning },
+    DiagnosticVirtualTextInfo = { fg = palette.info },
+    DiagnosticVirtualTextHint = { fg = palette.hint },
 
-    DiagnosticUnderlineError = { undercurl = true, sp = palette.error }, -- Used to underline "Error" diagnostics
-    DiagnosticUnderlineWarn = { undercurl = true, sp = palette.warning }, -- Used to underline "Warning" diagnostics
-    DiagnosticUnderlineInfo = { undercurl = true, sp = palette.info }, -- Used to underline "Information" diagnostics
-    DiagnosticUnderlineHint = { undercurl = true, sp = palette.hint }, -- Used to underline "Hint" diagnostics
+    DiagnosticUnderlineError = { undercurl = true, sp = palette.error },
+    DiagnosticUnderlineWarn = { undercurl = true, sp = palette.warning },
+    DiagnosticUnderlineInfo = { undercurl = true, sp = palette.info },
+    DiagnosticUnderlineHint = { undercurl = true, sp = palette.hint },
 
     LspSignatureActiveParameter = { bg = palette.alt_bg, bold = true },
     LspCodeLens = { fg = palette.comment },
