@@ -17,4 +17,6 @@ function M.set(options)
   M.options = vim.tbl_extend("force", DEFAULT, options or {})
 end
 
+M.set()
+
 return M
