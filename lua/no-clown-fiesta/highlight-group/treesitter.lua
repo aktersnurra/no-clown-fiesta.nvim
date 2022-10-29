@@ -1,18 +1,20 @@
 local M = {}
 
+local unpack = table.unpack
+
 function M.highlight(palette, options)
   return {
-    ["@comment"] = { fg = palette.medium_gray, style = options.style.comments },
+    ["@comment"] = { fg = palette.medium_gray, unpack(options.style.comments) },
     ["@annotation"] = { fg = palette.white },
     ["@attribute"] = { fg = palette.white },
     ["@constructor"] = { fg = palette.cyan },
-    ["@type"] = { fg = palette.white, style = options.style.type },
+    ["@type"] = { fg = palette.white, unpack(options.style.type) },
     ["@type.builtin"] = { fg = palette.white },
     ["@conditional"] = { fg = palette.gray_blue },
     ["@exception"] = { fg = palette.red },
     ["@include"] = { fg = palette.red },
-    ["@keyword"] = { fg = palette.gray_blue, style = options.style.keywords },
-    ["@keyword.function"] = { fg = palette.gray_blue, style = options.style.keywords },
+    ["@keyword"] = { fg = palette.gray_blue, unpack(options.style.keywords) },
+    ["@keyword.function"] = { fg = palette.gray_blue, unpack(options.style.keywords) },
     ["@label"] = { fg = palette.white },
     ["@namespace"] = { fg = palette.white },
     ["@repeat"] = { fg = palette.gray_blue },
@@ -23,12 +25,12 @@ function M.highlight(palette, options)
     ["@boolean"] = { fg = palette.red },
     ["@character"] = { fg = palette.light_green },
     ["@error"] = { fg = palette.error_red },
-    ["@function"] = { fg = palette.cyan, style = options.style.functions },
+    ["@function"] = { fg = palette.cyan, unpack(options.style.functions) },
     ["@function.builtin"] = { fg = palette.cyan },
     ["@method"] = { fg = palette.cyan },
     ["@const.macro"] = { fg = palette.cyan },
     ["@function.macro"] = { fg = palette.cyan },
-    ["@variable"] = { fg = palette.white, style = options.style.variables },
+    ["@variable"] = { fg = palette.white, unpack(options.style.variables) },
     ["@variable.builtin"] = { fg = palette.white },
     ["@property"] = { fg = palette.white },
     ["@operator"] = { fg = palette.white },
