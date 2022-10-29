@@ -1,10 +1,15 @@
 local M = {}
 
-function M.setup(opts)
+function M.setup(options)
   local settings = require "no-clown-fiesta.settings"
-  if opts then
-    opts = settings.set(opts)
+  if options then
+    settings.set(options)
   end
+end
+
+function M.load()
+  local settings = require "no-clown-fiesta.settings"
+  local options = settings.options
 
   vim.api.nvim_command "hi clear"
   if vim.fn.exists "syntax_on" then
@@ -17,7 +22,7 @@ function M.setup(opts)
 
   local util = require "no-clown-fiesta.util"
   local palette = require "no-clown-fiesta.palette"
-  local highlights = require("no-clown-fiesta.highlights").highlight(palette, opts)
+  local highlights = require("no-clown-fiesta.highlights").highlight(palette, options)
 
   local alpha = require("no-clown-fiesta.highlight-group.alpha").highlight(palette)
   local git = require("no-clown-fiesta.highlight-group.git").highlight(palette)
@@ -40,7 +45,7 @@ function M.setup(opts)
   )
   local treesitter = require("no-clown-fiesta.highlight-group.treesitter").highlight(
     palette,
-    opts
+    options
   )
   local whichkey = require("no-clown-fiesta.highlight-group.whichkey").highlight(
     palette

@@ -1,8 +1,11 @@
 local M = {}
 
-function M.highlight(palette, opts)
+function M.highlight(palette, options)
   return {
-    Normal = { fg = palette.fg, bg = opts.transparent_background },
+    Normal = {
+      fg = palette.fg,
+      bg = options.transparent and palette.none or palette.bg,
+    },
     SignColumn = { bg = palette.bg },
     MsgArea = { fg = palette.fg, bg = palette.bg },
     ModeMsg = { fg = palette.fg, bg = palette.bg },
@@ -16,7 +19,7 @@ function M.highlight(palette, opts)
     PmenuSel = { fg = palette.blue, bg = palette.alt_bg },
     WildMenu = { fg = palette.blue, bg = palette.alt_bg },
     CursorLineNr = { fg = palette.light_gray, style = "bold" },
-    Comment = { fg = palette.medium_gray, style = opts.comments },
+    Comment = { fg = palette.medium_gray, style = options.comments },
     Folded = { fg = palette.light_gray, bg = palette.alt_bg },
     FoldColumn = { fg = palette.light_gray, bg = palette.alt_bg },
     LineNr = { fg = palette.gray },
@@ -60,7 +63,7 @@ function M.highlight(palette, opts)
     Question = { fg = palette.cyan },
     EndOfBuffer = { fg = palette.bg },
     NonText = { fg = palette.bg },
-    Variable = { fg = palette.white, style = opts.variables },
+    Variable = { fg = palette.white, style = options.variables },
     String = { fg = palette.medium_gray_blue },
     Character = { fg = palette.light_green },
     Constant = { fg = palette.white },
@@ -68,13 +71,13 @@ function M.highlight(palette, opts)
     Boolean = { fg = palette.red },
     Float = { fg = palette.red },
     Identifier = { fg = palette.white },
-    Function = { fg = palette.cyan, style = opts.functions },
+    Function = { fg = palette.cyan, style = options.functions },
     Operator = { fg = palette.white },
-    Type = { fg = palette.white, style = opts.type },
+    Type = { fg = palette.white, style = options.type },
     StorageClass = { fg = palette.gray_blue },
     Structure = { fg = palette.gray_blue },
     Typedef = { fg = palette.white },
-    Keyword = { fg = palette.gray_blue, style = opts.keywords },
+    Keyword = { fg = palette.gray_blue, style = options.keywords },
     Statement = { fg = palette.gray_blue },
     Conditional = { fg = palette.gray_blue },
     Repeat = { fg = palette.gray_blue },
@@ -90,7 +93,7 @@ function M.highlight(palette, opts)
     Tag = { fg = palette.pale_purple },
     Debug = { fg = palette.red },
     Delimiter = { fg = palette.white },
-    SpecialComment = { fg = palette.medium_gray, style = opts.comments },
+    SpecialComment = { fg = palette.medium_gray, style = options.comments },
     Underlined = { style = "underline" },
     Bold = { style = "bold" },
     Italic = { style = "italic" },

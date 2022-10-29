@@ -1,17 +1,20 @@
 local M = {}
-local palette = require "no-clown-fiesta.palette"
 
-local default = {
-  transparent_background = palette.bg,
-  comments = "NONE",
-  keywords = "NONE",
-  functions = "NONE",
-  variables = "NONE",
-  type = "NONE",
+local DEFAULT = {
+  transparent = false,
+  styles = {
+    comments = {},
+    keywords = {},
+    functions = {},
+    variables = {},
+    type = { bold = true },
+  },
 }
 
-function M.set(opts)
-  return vim.tbl_extend("force", default, opts)
+M.options = {}
+
+function M.setup(options)
+  M.options = vim.tbl_extend("force", DEFAULT, options)
 end
 
 return M
