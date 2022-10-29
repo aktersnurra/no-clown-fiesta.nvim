@@ -13,7 +13,7 @@ local DEFAULT = {
 
 M.options = {}
 
-function M.setup(options)
+function M.set(options)
   M.options = vim.tbl_extend("force", DEFAULT, options)
 end
 
