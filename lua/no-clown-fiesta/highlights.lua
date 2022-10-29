@@ -10,7 +10,7 @@ function M.highlight(palette, options)
     MsgArea = { fg = palette.fg, bg = palette.bg },
     ModeMsg = { fg = palette.fg, bg = palette.bg },
     MsgSeparator = { fg = palette.fg, bg = palette.bg },
-    SpellBad = { sp = palette.error_red, undercurl = true },
+    SpellBad = { sp = palette.error, undercurl = true },
     SpellCap = { sp = palette.yellow, undercurl = true },
     SpellLocal = { sp = palette.green, undercurl = true },
     SpellRare = { sp = palette.purple, undercurl = true },
@@ -36,7 +36,7 @@ function M.highlight(palette, options)
     NormalFloat = { bg = palette.alt_bg },
     Visual = { bg = palette.gray },
     VisualNOS = { bg = palette.alt_bg },
-    WarningMsg = { fg = palette.error_red, bg = palette.bg },
+    WarningMsg = { fg = palette.error, bg = palette.bg },
     DiffAdd = { bg = palette.neogit_green },
     DiffText = { bg = palette.neogit_blue },
     DiffChange = {
@@ -59,7 +59,7 @@ function M.highlight(palette, options)
     Directory = { fg = palette.blue },
     SpecialKey = { fg = palette.blue },
     Title = { fg = palette.blue },
-    ErrorMsg = { fg = palette.error_red, bg = palette.bg, bold = true },
+    ErrorMsg = { fg = palette.error, bg = palette.bg, bold = true },
     Search = { fg = palette.orange, bg = palette.alt_bg },
     IncSearch = { fg = palette.cursor_fg, bg = palette.alt_bg },
     Substitute = { fg = palette.alt_bg, bg = palette.gray_blue },
@@ -115,12 +115,12 @@ function M.highlight(palette, options)
     Italic = { italic = true },
     Ignore = { fg = palette.cyan, bg = palette.bg, bold = true },
     Todo = { fg = palette.red, bg = palette.bg, bold = true },
-    Error = { fg = palette.error_red, bg = palette.bg, bold = true },
+    Error = { fg = palette.error, bg = palette.bg, bold = true },
     TabLine = { fg = palette.gray, bg = palette.alt_bg },
     TabLineSel = { fg = palette.white, bg = palette.alt_bg },
     TabLineFill = { fg = palette.white, bg = palette.alt_bg },
     WinSeparator = { fg = palette.medium_gray, bg = palette.bg },
-    DiagnosticFloatingError = { fg = palette.error_red },
+    DiagnosticFloatingError = { fg = palette.error },
   }
 end
 

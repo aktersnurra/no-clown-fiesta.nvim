@@ -36,7 +36,7 @@ function M.highlight(palette, options)
     ["@number"] = { fg = palette.red },
     ["@boolean"] = { fg = palette.red },
     ["@character"] = { fg = palette.light_green },
-    ["@error"] = { fg = palette.error_red },
+    ["@error"] = { fg = palette.error },
     ["@function"] = vim.tbl_extend(
       "force",
       { fg = palette.cyan },
@@ -75,7 +75,7 @@ function M.highlight(palette, options)
     ["@keyword.operator"] = { fg = palette.gray_blue },
     ["@structure"] = { fg = palette.purple_test },
     ["@strong"] = { fg = palette.medium_gray },
-    ["@query.linter.error"] = { fg = palette.warning_orange },
+    ["@query.linter.error"] = { fg = palette.warning },
   }
 end
 

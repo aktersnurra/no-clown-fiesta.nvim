@@ -2,47 +2,27 @@ local M = {}
 
 function M.highlight(palette)
   return {
-    LspDiagnosticsDefaultError = { fg = palette.error_red },
-    LspDiagnosticsDefaultWarning = { fg = palette.warning_orange },
-    LspDiagnosticsDefaultInformation = { fg = palette.info_yellow },
-    LspDiagnosticsDefaultInfo = { fg = palette.info_yellow },
-    LspDiagnosticsDefaultHint = { fg = palette.hint_blue },
-    LspDiagnosticsVirtualTextError = { fg = palette.error_red },
-    LspDiagnosticsVirtualTextWarning = { fg = palette.warning_orange },
-    LspDiagnosticsVirtualTextInformation = { fg = palette.info_yellow },
-    LspDiagnosticsVirtualTextInfo = { fg = palette.info_yellow },
-    LspDiagnosticsVirtualTextHint = { fg = palette.hint_blue },
-    LspDiagnosticsFloatingError = { fg = palette.error_red },
-    LspDiagnosticsFloatingWarning = { fg = palette.warning_orange },
-    LspDiagnosticsFloatingInformation = { fg = palette.info_yellow },
-    LspDiagnosticsFloatingInfo = { fg = palette.info_yellow },
-    LspDiagnosticsFloatingHint = { fg = palette.hint_blue },
-    DiagnosticSignError = { fg = palette.error_red },
-    DiagnosticSignWarning = { fg = palette.warning_orange },
-    DiagnosticSignWarn = { fg = palette.gray },
-    DiagnosticSignInformation = { fg = palette.info_yellow },
-    DiagnosticSignInfo = { fg = palette.gray },
-    DiagnosticSignHint = { fg = palette.gray },
-    LspDiagnosticsSignError = { fg = palette.error_red },
-    LspDiagnosticsSignWarning = { fg = palette.warning_orange },
-    LspDiagnosticsSignInformation = { fg = palette.info_yellow },
-    LspDiagnosticsSignInfo = { fg = palette.info_yellow },
-    LspDiagnosticsSignHint = { fg = palette.hint_blue },
-    LspDiagnosticsError = { fg = palette.error_red },
-    LspDiagnosticsWarning = { fg = palette.warning_orange },
-    LspDiagnosticsInformation = { fg = palette.info_yellow },
-    LspDiagnosticsInfo = { fg = palette.info_yellow },
-    LspDiagnosticsHint = { fg = palette.hint_blue },
-    DiagnosticUnderlineError = {
-      sp = palette.error_red,
-      undercurl = true,
-    },
-    DiagnosticUnderlineWarn = { sp = palette.warning_orange },
-    DiagnosticUnderlineInfo = { sp = palette.hint_blue },
-    DiagnosticUnderlineHint = { sp = palette.hint_blue },
     LspReferenceRead = { bg = "#36383F" },
     LspReferenceText = { bg = "#36383F" },
     LspReferenceWrite = { bg = "#36383f" },
+
+    DiagnosticError = { fg = palette.error }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+    DiagnosticWarn = { fg = palette.warning }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+    DiagnosticInfo = { fg = palette.info }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+    DiagnosticHint = { fg = palette.hint }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+
+    DiagnosticVirtualTextError = { fg = palette.error }, -- Used for "Error" diagnostic virtual text
+    DiagnosticVirtualTextWarn = { fg = palette.warning }, -- Used for "Warning" diagnostic virtual text
+    DiagnosticVirtualTextInfo = { fg = palette.info }, -- Used for "Information" diagnostic virtual text
+    DiagnosticVirtualTextHint = { fg = palette.hint }, -- Used for "Hint" diagnostic virtual text
+
+    DiagnosticUnderlineError = { undercurl = true, sp = palette.error }, -- Used to underline "Error" diagnostics
+    DiagnosticUnderlineWarn = { undercurl = true, sp = palette.warning }, -- Used to underline "Warning" diagnostics
+    DiagnosticUnderlineInfo = { undercurl = true, sp = palette.info }, -- Used to underline "Information" diagnostics
+    DiagnosticUnderlineHint = { undercurl = true, sp = palette.hint }, -- Used to underline "Hint" diagnostics
+
+    LspSignatureActiveParameter = { bg = palette.alt_bg, bold = true },
+    LspCodeLens = { fg = palette.comment },
   }
 end
 
