@@ -22,7 +22,7 @@ function M.highlight(palette, options)
     Comment = vim.tbl_extend(
       "force",
       { fg = palette.medium_gray },
-      options.style.comments
+      options.styles.comments
     ),
     Folded = { fg = palette.light_gray, bg = palette.alt_bg },
     FoldColumn = { fg = palette.light_gray, bg = palette.alt_bg },
@@ -67,7 +67,11 @@ function M.highlight(palette, options)
     Question = { fg = palette.cyan },
     EndOfBuffer = { fg = palette.bg },
     NonText = { fg = palette.bg },
-    Variable = vim.tbl_extend("force", { fg = palette.white }, options.style.variables),
+    Variable = vim.tbl_extend(
+      "force",
+      { fg = palette.white },
+      options.styles.variables
+    ),
     String = { fg = palette.medium_gray_blue },
     Character = { fg = palette.light_green },
     Constant = { fg = palette.white },
@@ -75,16 +79,16 @@ function M.highlight(palette, options)
     Boolean = { fg = palette.red },
     Float = { fg = palette.red },
     Identifier = { fg = palette.white },
-    Function = vim.tbl_extend("force", { fg = palette.cyan }, options.style.functions),
+    Function = vim.tbl_extend("force", { fg = palette.cyan }, options.styles.functions),
     Operator = { fg = palette.white },
-    Type = vim.tbl_extend("force", { fg = palette.white }, options.style.type),
+    Type = vim.tbl_extend("force", { fg = palette.white }, options.styles.type),
     StorageClass = { fg = palette.gray_blue },
     Structure = { fg = palette.gray_blue },
     Typedef = { fg = palette.white },
     Keyword = vim.tbl_extend(
       "force",
       { fg = palette.gray_blue },
-      options.style.keywords
+      options.styles.keywords
     ),
     Statement = { fg = palette.gray_blue },
     Conditional = { fg = palette.gray_blue },
@@ -104,7 +108,7 @@ function M.highlight(palette, options)
     SpecialComment = vim.tbl_extend(
       "force",
       { fg = palette.medium_gray },
-      options.style.comments
+      options.styles.comments
     ),
     Underlined = { style = "underline" },
     Bold = { style = "bold" },

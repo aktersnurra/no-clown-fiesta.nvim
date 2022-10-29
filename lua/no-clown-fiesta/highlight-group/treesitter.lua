@@ -7,12 +7,12 @@ function M.highlight(palette, options)
     ["@comment"] = vim.tbl_extend(
       "force",
       { fg = palette.medium_gray },
-      options.style.comments
+      options.styles.comments
     ),
     ["@annotation"] = { fg = palette.white },
     ["@attribute"] = { fg = palette.white },
     ["@constructor"] = { fg = palette.cyan },
-    ["@type"] = vim.tbl_extend("force", { fg = palette.white }, options.style.type),
+    ["@type"] = vim.tbl_extend("force", { fg = palette.white }, options.styles.type),
     ["@type.builtin"] = { fg = palette.white },
     ["@conditional"] = { fg = palette.gray_blue },
     ["@exception"] = { fg = palette.red },
@@ -20,12 +20,12 @@ function M.highlight(palette, options)
     ["@keyword"] = vim.tbl_extend(
       "force",
       { fg = palette.gray_blue },
-      options.style.keywords
+      options.styles.keywords
     ),
     ["@keyword.function"] = vim.tbl_extend(
       "force",
       { fg = palette.gray_blue },
-      options.style.keywords
+      options.styles.keywords
     ),
     ["@label"] = { fg = palette.white },
     ["@namespace"] = { fg = palette.white },
@@ -40,7 +40,7 @@ function M.highlight(palette, options)
     ["@function"] = vim.tbl_extend(
       "force",
       { fg = palette.cyan },
-      options.style.functions
+      options.styles.functions
     ),
     ["@function.builtin"] = { fg = palette.cyan },
     ["@method"] = { fg = palette.cyan },
@@ -49,7 +49,7 @@ function M.highlight(palette, options)
     ["@variable"] = vim.tbl_extend(
       "force",
       { fg = palette.white },
-      options.style.variables
+      options.styles.variables
     ),
     ["@variable.builtin"] = { fg = palette.white },
     ["@property"] = { fg = palette.white },
