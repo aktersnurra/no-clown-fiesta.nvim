@@ -3,7 +3,7 @@ local M = {}
 function M.highlight(palette)
   return {
     NeogitNotificationInfo = { fg = palette.sign_add },
-    NeogitNotificationWarning = { fg = palette.warning_orange },
+    NeogitNotificationWarning = { fg = palette.warning },
     NeogitNotificationError = { fg = palette.sign_delete },
     NeogitDiffAddHighlight = {
       fg = palette.sign_add,
