@@ -1,18 +1,32 @@
 local M = {}
 
-function M.highlight(palette, opts)
+local unpack = unpack
+
+function M.highlight(palette, options)
   return {
-    ["@comment"] = { fg = palette.medium_gray, style = opts.comments },
+    ["@comment"] = vim.tbl_extend(
+      "force",
+      { fg = palette.medium_gray },
+      options.styles.comments
+    ),
     ["@annotation"] = { fg = palette.white },
     ["@attribute"] = { fg = palette.white },
     ["@constructor"] = { fg = palette.cyan },
-    ["@type"] = { fg = palette.white, style = opts.type },
+    ["@type"] = vim.tbl_extend("force", { fg = palette.white }, options.styles.type),
     ["@type.builtin"] = { fg = palette.white },
     ["@conditional"] = { fg = palette.gray_blue },
     ["@exception"] = { fg = palette.red },
     ["@include"] = { fg = palette.red },
-    ["@keyword"] = { fg = palette.gray_blue, style = opts.keywords },
-    ["@keyword.function"] = { fg = palette.gray_blue, style = opts.keywords },
+    ["@keyword"] = vim.tbl_extend(
+      "force",
+      { fg = palette.gray_blue },
+      options.styles.keywords
+    ),
+    ["@keyword.function"] = vim.tbl_extend(
+      "force",
+      { fg = palette.gray_blue },
+      options.styles.keywords
+    ),
     ["@label"] = { fg = palette.white },
     ["@namespace"] = { fg = palette.white },
     ["@repeat"] = { fg = palette.gray_blue },
@@ -23,12 +37,20 @@ function M.highlight(palette, opts)
     ["@boolean"] = { fg = palette.red },
     ["@character"] = { fg = palette.light_green },
     ["@error"] = { fg = palette.error_red },
-    ["@function"] = { fg = palette.cyan, style = opts.functions },
+    ["@function"] = vim.tbl_extend(
+      "force",
+      { fg = palette.cyan },
+      options.styles.functions
+    ),
     ["@function.builtin"] = { fg = palette.cyan },
     ["@method"] = { fg = palette.cyan },
     ["@const.macro"] = { fg = palette.cyan },
     ["@function.macro"] = { fg = palette.cyan },
-    ["@variable"] = { fg = palette.white, style = opts.variables },
+    ["@variable"] = vim.tbl_extend(
+      "force",
+      { fg = palette.white },
+      options.styles.variables
+    ),
     ["@variable.builtin"] = { fg = palette.white },
     ["@property"] = { fg = palette.white },
     ["@operator"] = { fg = palette.white },
@@ -45,11 +67,11 @@ function M.highlight(palette, opts)
     ["@string.regex"] = { fg = palette.medium_gray_blue },
     ["@string.escape"] = { fg = palette.medium_gray_blue },
     ["@tag"] = { fg = palette.pale_purple },
-    ["@emphasis"] = { style = "italic" },
-    ["@underline"] = { style = "underline" },
+    ["@emphasis"] = { italic = true },
+    ["@underline"] = { underline = true },
     ["@title"] = { fg = palette.medium_gray },
     ["@literal"] = { fg = palette.medium_gray },
-    ["@uri"] = { fg = palette.cyan, style = "underline" },
+    ["@uri"] = { fg = palette.cyan, underline = true },
     ["@keyword.operator"] = { fg = palette.gray_blue },
     ["@structure"] = { fg = palette.purple_test },
     ["@strong"] = { fg = palette.medium_gray },
