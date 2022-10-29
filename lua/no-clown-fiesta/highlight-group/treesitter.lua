@@ -1,20 +1,32 @@
 local M = {}
 
-local unpack = table.unpack
+local unpack = unpack
 
 function M.highlight(palette, options)
   return {
-    ["@comment"] = { fg = palette.medium_gray, unpack(options.style.comments) },
+    ["@comment"] = vim.tbl_extend(
+      "force",
+      { fg = palette.medium_gray },
+      options.style.comments
+    ),
     ["@annotation"] = { fg = palette.white },
     ["@attribute"] = { fg = palette.white },
     ["@constructor"] = { fg = palette.cyan },
-    ["@type"] = { fg = palette.white, unpack(options.style.type) },
+    ["@type"] = vim.tbl_extend("force", { fg = palette.white }, options.style.type),
     ["@type.builtin"] = { fg = palette.white },
     ["@conditional"] = { fg = palette.gray_blue },
     ["@exception"] = { fg = palette.red },
     ["@include"] = { fg = palette.red },
-    ["@keyword"] = { fg = palette.gray_blue, unpack(options.style.keywords) },
-    ["@keyword.function"] = { fg = palette.gray_blue, unpack(options.style.keywords) },
+    ["@keyword"] = vim.tbl_extend(
+      "force",
+      { fg = palette.gray_blue },
+      options.style.keywords
+    ),
+    ["@keyword.function"] = vim.tbl_extend(
+      "force",
+      { fg = palette.gray_blue },
+      options.style.keywords
+    ),
     ["@label"] = { fg = palette.white },
     ["@namespace"] = { fg = palette.white },
     ["@repeat"] = { fg = palette.gray_blue },
@@ -25,12 +37,20 @@ function M.highlight(palette, options)
     ["@boolean"] = { fg = palette.red },
     ["@character"] = { fg = palette.light_green },
     ["@error"] = { fg = palette.error_red },
-    ["@function"] = { fg = palette.cyan, unpack(options.style.functions) },
+    ["@function"] = vim.tbl_extend(
+      "force",
+      { fg = palette.cyan },
+      options.style.functions
+    ),
     ["@function.builtin"] = { fg = palette.cyan },
     ["@method"] = { fg = palette.cyan },
     ["@const.macro"] = { fg = palette.cyan },
     ["@function.macro"] = { fg = palette.cyan },
-    ["@variable"] = { fg = palette.white, unpack(options.style.variables) },
+    ["@variable"] = vim.tbl_extend(
+      "force",
+      { fg = palette.white },
+      options.style.variables
+    ),
     ["@variable.builtin"] = { fg = palette.white },
     ["@property"] = { fg = palette.white },
     ["@operator"] = { fg = palette.white },
