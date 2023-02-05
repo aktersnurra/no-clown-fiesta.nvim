@@ -30,6 +30,7 @@ function M.load()
   local alpha = require("no-clown-fiesta.groups.alpha").highlight(palette)
   local git = require("no-clown-fiesta.groups.git").highlight(palette)
   local hop = require("no-clown-fiesta.groups.hop").highlight(palette)
+  local lazy = require("no-clown-fiesta.groups.lazy").highlight(palette)
   local lir = require("no-clown-fiesta.groups.lir").highlight(palette)
   local lsp = require("no-clown-fiesta.groups.lsp").highlight(palette)
   local markdown = require("no-clown-fiesta.groups.markdown").highlight(palette)
@@ -49,6 +50,7 @@ function M.load()
     git,
     hop,
     highlights,
+    lazy,
     lir,
     lsp,
     markdown,
