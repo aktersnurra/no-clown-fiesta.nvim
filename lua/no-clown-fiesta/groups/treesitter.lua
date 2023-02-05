@@ -35,7 +35,7 @@ function M.highlight(palette, options)
     ["@float"] = { fg = palette.red },
     ["@number"] = { fg = palette.red },
     ["@boolean"] = { fg = palette.red },
-    ["@character"] = { fg = palette.light_green },
+    ["@character"] = { fg = palette.green },
     ["@error"] = { fg = palette.error },
     ["@function"] = vim.tbl_extend(
       "force",
