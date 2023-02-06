@@ -34,7 +34,7 @@ function M.highlight(palette, options)
     CursorColumn = { bg = palette.alt_bg },
     ColorColumn = { bg = palette.alt_bg },
     NormalFloat = { bg = palette.alt_bg },
-    Visual = { bg = palette.accent },
+    Visual = { bg = palette.gray },
     VisualNOS = { bg = palette.alt_bg },
     WarningMsg = { fg = palette.error, bg = palette.bg },
     DiffAdd = { bg = palette.neogit_green },
