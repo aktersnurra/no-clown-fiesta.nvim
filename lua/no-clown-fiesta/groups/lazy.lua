@@ -1,6 +1,6 @@
 local M = {}
 
-function M.highlight(palette)
+function M.highlight(palette, opts)
   return {
     LazyButton = { fg = palette.fg },
     LazyButtonActive = { fg = palette.orange, bg = palette.accent },

@@ -1,6 +1,6 @@
 local M = {}
 
-function M.highlight(palette)
+function M.highlight(palette, opts)
   return {
     NvimTreeFolderIcon = { fg = palette.white },
     NvimTreeIndentMarker = { fg = palette.alt_bg },

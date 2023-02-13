@@ -1,6 +1,6 @@
 local M = {}
 
-function M.highlight(palette)
+function M.highlight(palette, opts)
   return {
     HopNextKey = { fg = palette.cyan, bold = true },
     HopNextKey1 = { fg = palette.red, bold = true },

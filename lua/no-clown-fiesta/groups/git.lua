@@ -1,6 +1,6 @@
 local M = {}
 
-function M.highlight(palette)
+function M.highlight(palette, opts)
   return {
     SignAdd = { fg = palette.sign_add },
     SignChange = { fg = palette.sign_change },

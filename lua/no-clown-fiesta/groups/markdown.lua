@@ -1,6 +1,6 @@
 local M = {}
 
-function M.highlight(palette)
+function M.highlight(palette, opts)
   return {
     markdownBlockquote = { fg = palette.accent },
     markdownBold = { fg = palette.yellow, bold = true },

@@ -1,15 +1,15 @@
 local M = {}
 
-function M.setup(options)
+function M.setup(opts)
   local settings = require "no-clown-fiesta.settings"
-  if options then
-    settings.set(options)
+  if opts then
+    settings.set(opts)
   end
 end
 
 function M.load()
   local settings = require "no-clown-fiesta.settings"
-  local options = settings.options
+  local opts = settings.opts
 
   vim.api.nvim_command "hi clear"
   if vim.fn.exists "syntax_on" then
@@ -22,49 +22,11 @@ function M.load()
 
   local util = require "no-clown-fiesta.util"
   local palette = require "no-clown-fiesta.palette"
-  local highlights = require("no-clown-fiesta.groups.highlights").highlight(
-    palette,
-    options
-  )
+  local groups = require "no-clown-fiesta.groups"
 
-  local alpha = require("no-clown-fiesta.groups.alpha").highlight(palette)
-  local git = require("no-clown-fiesta.groups.git").highlight(palette)
-  local hop = require("no-clown-fiesta.groups.hop").highlight(palette)
-  local lazy = require("no-clown-fiesta.groups.lazy").highlight(palette)
-  local lir = require("no-clown-fiesta.groups.lir").highlight(palette)
-  local lsp = require("no-clown-fiesta.groups.lsp").highlight(palette)
-  local markdown = require("no-clown-fiesta.groups.markdown").highlight(palette)
-  local neogit = require("no-clown-fiesta.groups.neogit").highlight(palette)
-  local nvimtree = require("no-clown-fiesta.groups.nvim-tree").highlight(palette)
-  local nvimcmp = require("no-clown-fiesta.groups.nvim-cmp").highlight(palette)
-  local statusline = require("no-clown-fiesta.groups.statusline").highlight(palette)
-  local telescope = require("no-clown-fiesta.groups.telescope").highlight(palette)
-  local treesitter = require("no-clown-fiesta.groups.treesitter").highlight(
-    palette,
-    options
-  )
-  local whichkey = require("no-clown-fiesta.groups.whichkey").highlight(palette)
-
-  local skeletons = {
-    alpha,
-    git,
-    hop,
-    highlights,
-    lazy,
-    lir,
-    lsp,
-    markdown,
-    neogit,
-    nvimtree,
-    nvimcmp,
-    statusline,
-    telescope,
-    treesitter,
-    whichkey,
-  }
-
-  for _, skeleton in ipairs(skeletons) do
-    util.initialise(skeleton)
+  for _, group in ipairs(groups) do
+    group = group.highlight(palette, opts)
+    util.initialise(group)
   end
 end
 

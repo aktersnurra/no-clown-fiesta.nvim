@@ -1,6 +1,6 @@
 local M = {}
 
-function M.highlight(palette)
+function M.highlight(palette, opts)
   return {
     LirFloatNormal = { fg = palette.fg, bg = palette.alt_bg },
     LirDir = { fg = palette.white },

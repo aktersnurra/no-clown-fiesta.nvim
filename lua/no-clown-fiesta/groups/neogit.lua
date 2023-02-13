@@ -1,6 +1,6 @@
 local M = {}
 
-function M.highlight(palette)
+function M.highlight(palette, opts)
   return {
     NeogitNotificationInfo = { fg = palette.sign_add },
     NeogitNotificationWarning = { fg = palette.warning },

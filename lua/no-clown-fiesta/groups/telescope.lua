@@ -1,6 +1,6 @@
 local M = {}
 
-function M.highlight(palette)
+function M.highlight(palette, opts)
   return {
     TelescopeNormal = { fg = palette.fg, bg = palette.bg },
     TelescopeSelection = { fg = palette.fg, bg = palette.accent },

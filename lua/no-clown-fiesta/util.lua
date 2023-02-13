@@ -1,12 +1,12 @@
 local M = {}
 
-local function highlight(group, properties)
-  vim.api.nvim_set_hl(0, group, properties)
+local function highlight(name, value)
+  vim.api.nvim_set_hl(0, name, value)
 end
 
-function M.initialise(skeleton)
-  for group, properties in pairs(skeleton) do
-    highlight(group, properties)
+function M.initialise(group)
+  for name, value in pairs(group) do
+    highlight(name, value)
   end
 end
 

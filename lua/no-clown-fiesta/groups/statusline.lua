@@ -1,6 +1,6 @@
 local M = {}
 
-function M.highlight(palette)
+function M.highlight(palette, opts)
   return {
     StatusLine = { fg = palette.gray, bg = palette.bg },
     StatusLineNC = { fg = palette.alt_bg, bg = palette.alt_bg },

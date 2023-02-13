@@ -1,10 +1,10 @@
 local M = {}
 
-function M.highlight(palette, options)
+function M.highlight(palette, opts)
   return {
     Normal = {
       fg = palette.fg,
-      bg = options.transparent and palette.none or palette.bg,
+      bg = opts.transparent and palette.none or palette.bg,
     },
     SignColumn = { bg = palette.bg },
     MsgArea = { fg = palette.fg, bg = palette.bg },
@@ -22,7 +22,7 @@ function M.highlight(palette, options)
     Comment = vim.tbl_extend(
       "force",
       { fg = palette.medium_gray },
-      options.styles.comments
+      opts.styles.comments
     ),
     Folded = { fg = palette.light_gray, bg = palette.alt_bg },
     FoldColumn = { fg = palette.light_gray, bg = palette.alt_bg },
@@ -67,11 +67,7 @@ function M.highlight(palette, options)
     Question = { fg = palette.cyan },
     EndOfBuffer = { fg = palette.bg },
     NonText = { fg = palette.bg },
-    Variable = vim.tbl_extend(
-      "force",
-      { fg = palette.white },
-      options.styles.variables
-    ),
+    Variable = vim.tbl_extend("force", { fg = palette.white }, opts.styles.variables),
     String = { fg = palette.medium_gray_blue },
     Character = { fg = palette.green },
     Constant = { fg = palette.white },
@@ -79,17 +75,13 @@ function M.highlight(palette, options)
     Boolean = { fg = palette.red },
     Float = { fg = palette.red },
     Identifier = { fg = palette.white },
-    Function = vim.tbl_extend("force", { fg = palette.cyan }, options.styles.functions),
+    Function = vim.tbl_extend("force", { fg = palette.cyan }, opts.styles.functions),
     Operator = { fg = palette.white },
-    Type = vim.tbl_extend("force", { fg = palette.white }, options.styles.type),
+    Type = vim.tbl_extend("force", { fg = palette.white }, opts.styles.type),
     StorageClass = { fg = palette.gray_blue },
     Structure = { fg = palette.gray_blue },
     Typedef = { fg = palette.white },
-    Keyword = vim.tbl_extend(
-      "force",
-      { fg = palette.gray_blue },
-      options.styles.keywords
-    ),
+    Keyword = vim.tbl_extend("force", { fg = palette.gray_blue }, opts.styles.keywords),
     Statement = { fg = palette.gray_blue },
     Conditional = { fg = palette.gray_blue },
     Repeat = { fg = palette.gray_blue },
@@ -108,7 +100,7 @@ function M.highlight(palette, options)
     SpecialComment = vim.tbl_extend(
       "force",
       { fg = palette.medium_gray },
-      options.styles.comments
+      opts.styles.comments
     ),
     Underlined = { underline = true },
     Bold = { bold = true },

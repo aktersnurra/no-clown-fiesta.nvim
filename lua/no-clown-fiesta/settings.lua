@@ -8,13 +8,14 @@ local DEFAULT = {
     functions = {},
     variables = {},
     type = { bold = true },
+    lsp = { underline = true },
   },
 }
 
-M.options = {}
+M.opts = {}
 
-function M.set(options)
-  M.options = vim.tbl_deep_extend("force", DEFAULT, options or {})
+function M.set(opts)
+  M.opts = vim.tbl_deep_extend("force", DEFAULT, opts or {})
 end
 
 M.set()

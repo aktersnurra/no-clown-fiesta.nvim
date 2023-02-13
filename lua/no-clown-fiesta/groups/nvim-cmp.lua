@@ -1,6 +1,6 @@
 local M = {}
 
-function M.highlight(palette)
+function M.highlight(palette, opts)
   return {
     CmpItemAbbr = { fg = palette.fg },
     CmpItemAbbrDeprecated = { fg = palette.red },

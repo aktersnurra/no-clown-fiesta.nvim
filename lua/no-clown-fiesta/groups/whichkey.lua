@@ -1,6 +1,6 @@
 local M = {}
 
-function M.highlight(palette)
+function M.highlight(palette, opts)
   return {
     WhichKey = { fg = palette.light_gray },
     WhichKeySeperator = { fg = palette.gray },
