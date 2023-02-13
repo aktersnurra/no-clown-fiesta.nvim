@@ -47,7 +47,7 @@ function M.highlight(palette, options)
     PmenuSbar = { bg = palette.alt_bg },
     PmenuThumb = { bg = palette.light_gray },
     MatchWord = { underline = true },
-    MatchParen = { fg = palette.pale_purple, bg = palette.bg, underline = true },
+    MatchParen = { fg = palette.blue, bg = palette.bg, underline = true },
     MatchWordCur = { underline = true },
     MatchParenCur = { underline = true },
     Cursor = { fg = palette.cursor_fg, bg = palette.cursor_bg },
@@ -102,7 +102,7 @@ function M.highlight(palette, options)
     PreCondit = { fg = palette.medium_gray },
     Special = { fg = palette.white },
     SpecialChar = { fg = palette.medium_gray_blue },
-    Tag = { fg = palette.pale_purple },
+    Tag = { fg = palette.blue },
     Debug = { fg = palette.red },
     Delimiter = { fg = palette.white },
     SpecialComment = vim.tbl_extend(
