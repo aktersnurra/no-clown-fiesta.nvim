@@ -30,6 +30,7 @@ require("no-clown-fiesta").setup({
     functions = {},
     variables = {},
     type = { bold = true },
+    lsp = { underline = true }
   },
 })
 ```
