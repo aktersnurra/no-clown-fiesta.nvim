@@ -113,6 +113,7 @@ function M.highlight(palette, opts)
     TabLineFill = { fg = palette.white, bg = palette.alt_bg },
     WinSeparator = { fg = palette.medium_gray, bg = palette.bg },
     DiagnosticFloatingError = { fg = palette.error },
+    FloatBorder = { fg = palette.fg },
   }
 end
 
