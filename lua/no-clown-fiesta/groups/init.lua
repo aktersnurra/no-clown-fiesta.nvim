@@ -7,6 +7,7 @@ return {
   require "no-clown-fiesta.groups.lir",
   require "no-clown-fiesta.groups.lsp",
   require "no-clown-fiesta.groups.markdown",
+  require "no-clown-fiesta.groups.mason",
   require "no-clown-fiesta.groups.neogit",
   require "no-clown-fiesta.groups.nvim-cmp",
   require "no-clown-fiesta.groups.nvim-tree",
