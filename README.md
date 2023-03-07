@@ -2,7 +2,7 @@
 
 An attempt at a color scheme that does not look like a clown puked up the source code.
 
-![image](https://gustafrydholm.xyz/images/no-clown-fiesta.png?)
+![image](https://gustafrydholm.xyz/images/no-clown-fiesta.png)
 
 ## Usage
 
@@ -23,7 +23,7 @@ and override these.
 ```lua
 require("no-clown-fiesta").setup({
   transparent = false, -- Enable this to disable the bg color
-  styles = { 
+  styles = {
     -- You can set any of the style values specified for `:h nvim_set_hl`
     comments = {},
     keywords = {},
