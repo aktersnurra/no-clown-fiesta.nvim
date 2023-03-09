@@ -40,9 +40,10 @@ function M.highlight(palette, opts)
     DiffAdd = { bg = palette.neogit_green },
     DiffText = { bg = palette.neogit_blue },
     DiffChange = {
+      fg = palette.sign_change,
       bg = palette.neogit_blue,
     },
-    DiffDelete = { fg = palette.bg, bg = palette.neogit_red },
+    DiffDelete = { fg = palette.sign_delete, bg = palette.neogit_red },
     QuickFixLine = { bg = palette.accent },
     PmenuSbar = { bg = palette.alt_bg },
     PmenuThumb = { bg = palette.light_gray },
