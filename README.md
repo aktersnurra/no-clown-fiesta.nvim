@@ -4,7 +4,7 @@ An attempt at a color scheme that does not look like a clown puked up the source
 
 ![image](https://gustafrydholm.xyz/images/no-clown-fiesta.webp)
 
-![image](https://gustafrydholm.xyz/images/no-clown-fiesta-in-c.png)
+![image](https://gustafrydholm.xyz/images/no-clown-fiesta-in-c.webp)
 
 ## Usage
 
