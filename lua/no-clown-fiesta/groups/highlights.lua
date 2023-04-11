@@ -27,7 +27,6 @@ function M.highlight(palette, opts)
     Folded = { fg = palette.light_gray, bg = palette.alt_bg },
     FoldColumn = { fg = palette.light_gray, bg = palette.alt_bg },
     LineNr = { fg = palette.gray },
-    FloatBoder = { fg = palette.gray, bg = palette.alt_bg },
     Whitespace = { fg = palette.gray },
     VertSplit = { fg = palette.bg, bg = palette.accent },
     CursorLine = { bg = palette.alt_bg },
