@@ -48,6 +48,7 @@ SUPPORTED PLUGINS                              *no-clown-fiesta-supported_plugin
 *   Alpha
 *   Git
 *   Hop
+*   Leap
 *   Lir
 *   LSP
 *   Lualine
