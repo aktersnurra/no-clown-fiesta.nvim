@@ -53,8 +53,16 @@ function M.highlight(palette, opts)
     Cursor = { fg = palette.cursor_fg, bg = palette.cursor_bg },
     lCursor = { fg = palette.cursor_fg, bg = palette.cursor_bg },
     CursorIM = { fg = palette.cursor_fg, bg = palette.cursor_bg },
-    TermCursor = { fg = palette.cursor_fg, bg = palette.cursor_bg },
-    TermCursorNC = { fg = palette.cursor_fg, bg = palette.cursor_bg },
+    TermCursor = {
+      fg = palette.cursor_fg,
+      bg = palette.cursor_bg,
+      reverse = false,
+    },
+    TermCursorNC = {
+      fg = palette.cursor_fg,
+      bg = palette.cursor_bg,
+      reverse = false,
+    },
     Conceal = { fg = palette.accent },
     Directory = { fg = palette.blue },
     SpecialKey = { fg = palette.blue },
