@@ -41,6 +41,7 @@ require("no-clown-fiesta").setup({
 - Git
 - Hop
 - Lir
+- Leap
 - LSP
 - Lualine
 - Markdown
