@@ -59,8 +59,7 @@ function M.highlight(palette, opts)
       reverse = false,
     },
     TermCursorNC = {
-      fg = palette.cursor_fg,
-      bg = palette.cursor_bg,
+      fg = palette.alt_bg,
       reverse = false,
     },
     Conceal = { fg = palette.accent },
