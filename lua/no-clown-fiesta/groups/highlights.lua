@@ -32,7 +32,9 @@ function M.highlight(palette, opts)
     CursorLine = { bg = palette.alt_bg },
     CursorColumn = { bg = palette.alt_bg },
     ColorColumn = { bg = palette.alt_bg },
-    NormalFloat = { bg = palette.alt_bg },
+    NormalFloat = {
+      bg = opts.transparent and palette.none or palette.alt_bg,
+    },
     Visual = { bg = palette.gray },
     VisualNOS = { bg = palette.alt_bg },
     WarningMsg = { fg = palette.error, bg = palette.bg },
