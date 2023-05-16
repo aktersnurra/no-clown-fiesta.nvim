@@ -64,7 +64,7 @@ function M.highlight(palette, opts)
       fg = palette.alt_bg,
       reverse = false,
     },
-    Conceal = { fg = palette.accent },
+    Conceal = { fg = palette.medium_gray },
     Directory = { fg = palette.blue },
     SpecialKey = { fg = palette.blue },
     Title = { fg = palette.blue },
