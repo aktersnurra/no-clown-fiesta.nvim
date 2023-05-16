@@ -4,22 +4,21 @@ function M.highlight(palette, opts)
   return {
     MasonNormal = { link = "NormalFloat" },
     MasonHeader = {
-      bold = true,
+      bold = false,
       fg = palette.fg,
-      bg = palette.alt_bg,
+      bg = palette.bg,
       default = true,
     },
     MasonHeaderSecondary = {
       bold = true,
       fg = palette.fg,
-      bg = palette.alt_bg,
+      bg = palette.bg,
       default = true,
     },
     MasonHighlight = { fg = palette.fg, default = true },
     MasonHighlightBlock = { bg = palette.fg, fg = palette.gray, default = true },
     MasonHighlightBlockBold = {
-      bg = palette.accent,
-      fg = palette.orange,
+      fg = palette.fg,
       bold = true,
       default = true,
     },
@@ -37,9 +36,8 @@ function M.highlight(palette, opts)
     },
     MasonLink = { link = "MasonHighlight", default = true },
     MasonMuted = { fg = palette.cursor_fg, default = true },
-    MasonMutedBlock = { bg = palette.accent, fg = palette.fg, default = true },
+    MasonMutedBlock = { bg = palette.bg, fg = palette.fg, default = true },
     MasonMutedBlockBold = {
-      bg = palette.alt_bg,
       fg = palette.fg,
       bold = true,
       default = true,
