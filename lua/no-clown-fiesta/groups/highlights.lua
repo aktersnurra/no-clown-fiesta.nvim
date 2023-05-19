@@ -6,19 +6,28 @@ function M.highlight(palette, opts)
       fg = palette.fg,
       bg = opts.transparent and palette.none or palette.bg,
     },
-    SignColumn = { bg = palette.bg },
-    MsgArea = { fg = palette.fg, bg = palette.bg },
+    SignColumn = { bg = opts.transparent and palette.none or palette.bg },
+    MsgArea = {
+      fg = palette.fg,
+      bg = opts.transparent and palette.none or palette.bg,
+    },
     ModeMsg = { fg = palette.fg, bg = palette.bg },
     MsgSeparator = { fg = palette.fg, bg = palette.bg },
     SpellBad = { sp = palette.error, undercurl = true },
     SpellCap = { sp = palette.yellow, undercurl = true },
     SpellLocal = { sp = palette.sign_add, undercurl = true },
     SpellRare = { sp = palette.purple, undercurl = true },
-    NormalNC = { fg = palette.fg, bg = palette.bg },
+    NormalNC = {
+      fg = palette.fg,
+      bg = opts.transparent and palette.none or palette.bg,
+    },
     Pmenu = { fg = palette.light_gray, bg = palette.accent },
     PmenuSel = { fg = palette.blue, bg = palette.alt_bg },
     WildMenu = { fg = palette.blue, bg = palette.alt_bg },
-    CursorLineNr = { fg = palette.light_gray, bold = true },
+    CursorLineNr = {
+      fg = palette.light_gray,
+      bold = true,
+    },
     Comment = vim.tbl_extend(
       "force",
       { fg = palette.medium_gray },
@@ -29,7 +38,9 @@ function M.highlight(palette, opts)
     LineNr = { fg = palette.gray },
     Whitespace = { fg = palette.gray },
     VertSplit = { fg = palette.bg, bg = palette.accent },
-    CursorLine = { bg = palette.alt_bg },
+    CursorLine = {
+      bg = palette.alt_bg,
+    },
     CursorColumn = { bg = palette.alt_bg },
     ColorColumn = { bg = palette.alt_bg },
     NormalFloat = {
