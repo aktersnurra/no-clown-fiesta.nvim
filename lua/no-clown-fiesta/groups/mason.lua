@@ -2,47 +2,45 @@ local M = {}
 
 function M.highlight(palette, opts)
   return {
-    MasonNormal = { link = "NormalFloat" },
-    MasonHeader = {
-      bold = false,
-      fg = palette.fg,
-      bg = palette.bg,
-      default = true,
-    },
+    MasonNormal = { link = "NormalFloat", default = true },
+    MasonHeader = { bold = true, fg = palette.fg, bg = palette.bg, default = true },
     MasonHeaderSecondary = {
       bold = true,
-      fg = palette.fg,
+      fg = palette.light_gray,
       bg = palette.bg,
       default = true,
     },
     MasonHighlight = { fg = palette.fg, default = true },
-    MasonHighlightBlock = { bg = palette.fg, fg = palette.gray, default = true },
+    MasonHighlightBlock = { bg = palette.fg, fg = palette.bg, default = true },
     MasonHighlightBlockBold = {
-      fg = palette.fg,
+      bg = palette.fg,
+      fg = palette.bg,
       bold = true,
       default = true,
     },
     MasonHighlightSecondary = { fg = palette.fg, default = true },
     MasonHighlightBlockSecondary = {
       bg = palette.fg,
-      fg = palette.alt_bg,
+      fg = palette.bg,
       default = true,
     },
     MasonHighlightBlockBoldSecondary = {
       bg = palette.fg,
-      fg = palette.alt_bg,
+      fg = palette.bg,
       bold = true,
       default = true,
     },
     MasonLink = { link = "MasonHighlight", default = true },
-    MasonMuted = { fg = palette.cursor_fg, default = true },
-    MasonMutedBlock = { bg = palette.bg, fg = palette.fg, default = true },
+    MasonMuted = { fg = palette.medium_gray, default = true },
+    MasonMutedBlock = { bg = palette.accent, fg = palette.light_gray, default = true },
     MasonMutedBlockBold = {
-      fg = palette.fg,
+      bg = palette.gray,
+      fg = palette.bg,
       bold = true,
       default = true,
     },
-    MasonError = { fg = palette.red, default = true },
+    MasonError = { link = "ErrorMsg", default = true },
+    MasonWarning = { link = "WarningMsg", default = true },
     MasonHeading = { bold = true, default = true },
   }
 end
