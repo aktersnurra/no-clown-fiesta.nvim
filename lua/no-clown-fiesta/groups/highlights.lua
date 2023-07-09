@@ -34,7 +34,10 @@ function M.highlight(palette, opts)
       opts.styles.comments
     ),
     Folded = { fg = palette.light_gray, bg = palette.alt_bg },
-    FoldColumn = { fg = palette.light_gray, bg = palette.alt_bg },
+    FoldColumn = {
+      fg = palette.light_gray,
+      bg = opts.transparent and palette.none or palette.bg,
+    },
     LineNr = { fg = palette.gray },
     Whitespace = { fg = palette.gray },
     VertSplit = { fg = palette.bg, bg = palette.accent },
