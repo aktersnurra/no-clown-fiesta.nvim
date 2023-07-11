@@ -40,15 +40,17 @@ require("no-clown-fiesta").setup({
 - Alpha
 - Git
 - Hop
-- Lir
+- Lazy
 - Leap
+- Lir
 - LSP
 - Lualine
 - Markdown
+- Mason
 - Neogit
 - NvimCmp
 - NvimTree
+- StatusLine
 - Telescope
 - Treesitter
-- StatusLine (the default non custom one)
 - WhichKey
