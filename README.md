@@ -38,6 +38,7 @@ require("no-clown-fiesta").setup({
 ## Supported Plugins
 
 - Alpha
+- Dadbod-ui
 - Git
 - Hop
 - Lazy

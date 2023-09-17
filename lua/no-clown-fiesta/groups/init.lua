@@ -1,5 +1,6 @@
 return {
   require "no-clown-fiesta.groups.alpha",
+  require "no-clown-fiesta.groups.dadbod-ui",
   require "no-clown-fiesta.groups.git",
   require "no-clown-fiesta.groups.highlights",
   require "no-clown-fiesta.groups.hop",
