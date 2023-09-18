@@ -27,10 +27,8 @@ local colors = {
   warning = "#ab8550",
   info = "#ab8550",
   hint = "#576f82",
-  neogit_light_green = "#2A2E19",
   neogit_blue = "#1B1F27",
   neogit_green = "#212513",
-  neogit_light_red = "#402020",
   neogit_red = "#351D1D",
 }
 
