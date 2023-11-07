@@ -17,4 +17,5 @@ return {
   require "no-clown-fiesta.groups.telescope",
   require "no-clown-fiesta.groups.treesitter",
   require "no-clown-fiesta.groups.whichkey",
+  require "no-clown-fiesta.groups.neotest",
 }
