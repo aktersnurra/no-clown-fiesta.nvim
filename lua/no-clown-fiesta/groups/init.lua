@@ -18,4 +18,5 @@ return {
   require "no-clown-fiesta.groups.treesitter",
   require "no-clown-fiesta.groups.whichkey",
   require "no-clown-fiesta.groups.neotest",
+  require "no-clown-fiesta.groups.dap",
 }
