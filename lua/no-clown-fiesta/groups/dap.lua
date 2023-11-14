@@ -37,42 +37,31 @@ local M = {}
 
 function M.highlight(palette, opts)
   return {
-    -- nvim-dap
-		DapBreakpoint = { fg = palette.red },
-		DapBreakpointCondition = { fg = palette.yellow },
-		DapLogPoint = { fg = palette.blue },
-		DapStopped = { fg = palette.red },
-
-		-- nvim-dap-ui
-		DAPUIScope = { fg = palette.blue },
-		DAPUIType = { fg = palette.purple },
-		DAPUIValue = { fg = palette.blue },
-		DAPUIVariable = { fg = palette.white },
-		DapUIModifiedValue = { fg = palette.yellow },
-		DapUIDecoration = { fg = palette.blue },
-		DapUIThread = { fg = palette.green },
-		DapUIStoppedThread = { fg = palette.blue },
-		DapUISource = { fg = palette.medium_gray },
-		DapUILineNumber = { fg = palette.blue },
-		DapUIFloatBorder = { fg = palette.blue },
-
-		DapUIWatchesEmpty = { fg = palette.error },
-		DapUIWatchesValue = { fg = palette.green },
-		DapUIWatchesError = { fg = palette.error },
-
-		DapUIBreakpointsPath = { fg = palette.blue },
-		DapUIBreakpointsInfo = { fg = palette.green },
-		DapUIBreakpointsCurrentLine = { fg = palette.green, style = { "bold" } },
-		DapUIBreakpointsDisabledLine = { fg = palette.gray },
-
-		DapUIStepOver = { fg = palette.blue },
-		DapUIStepInto = { fg = palette.blue },
-		DapUIStepBack = { fg = palette.blue },
-		DapUIStepOut = { fg = palette.blue },
-		DapUIStop = { fg = palette.red },
-		DapUIPlayPause = { fg = palette.green },
-		DapUIRestart = { fg = palette.green },
-		DapUIUnavailable = { fg = palette.gray },
+    DapUIScope                   = { fg = palette.cyan },
+    DapUIType                    = { fg = palette.magenta },
+    DapUIModifiedValue           = { fg = palette.cyan, style = 'bold' },
+    DapUIDecoration              = { link = 'DapUIScope' },
+    DapUIThread                  = { fg = palette.green, style = 'bold' },
+    DapUIStoppedThread           = { link = 'DapUIScope' },
+    DapUISource                  = { link = 'DapUIType' },
+    DapUILineNumber              = { link = 'DapUIScope' },
+    DapUIFloatBorder             = { link = 'DapUIScope' },
+    DapUIWatchesEmpty            = { fg = palette.red },
+    DapUIWatchesValue            = { fg = palette.green },
+    DapUIWatchesError            = { link = 'DapUIWatchesEmpty' },
+    DapUIBreakpointsPath         = { link = 'DapUIScope' },
+    DapUIBreakpointsInfo         = { link = 'DapUIWatchesValue' },
+    DapUIBreakpointsCurrentLine  = { link = 'DapUIThread' },
+    DapUIBreakpointsDisabledLine = { fg = palette.fg },
+    DapUIStepOver                = { link = 'DapUIScope' },
+    DapUIStepInto                = { link = 'DapUIScope' },
+    DapUIStepBack                = { link = 'DapUIScope' },
+    DapUIStepOut                 = { link = 'DapUIScope' },
+    DapUIStop                    = { link = 'DapUIWatchesEmpty' },
+    DapUIPlayPause               = { link = 'DapUIWatchesValue' },
+    DapUIRestart                 = { link = 'DapUIWatchesValue' },
+    DapUIUnavailable             = { link = 'DapUIBreakpointsDisabledLine' },
+    DapUIWinSelect               = { link = 'DapUIModifiedValue' },
   }
 end
 
