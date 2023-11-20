@@ -55,3 +55,5 @@ require("no-clown-fiesta").setup({
 - Telescope
 - Treesitter
 - WhichKey
+- Neotest
+- Dap UI
