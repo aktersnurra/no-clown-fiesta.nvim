@@ -10,7 +10,7 @@ function M.highlight(palette, opts)
     ["@comment.documentation"] = { fg = palette.medium_gray },
     ["@comment.error"] = { fg = palette.error },
     ["@comment.note"] = { fg = palette.light_gray },
-    ["@comment.todo"] = { fg = palette.hint },
+    ["@comment.todo"] = { fg = palette.todo },
     ["@comment.warning"] = { fg = palette.warning },
     ["@const.builtin"] = { fg = palette.red },
     ["@const.macro"] = { fg = palette.cyan },

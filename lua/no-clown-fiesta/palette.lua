@@ -27,6 +27,7 @@ local colors = {
   warning = "#ab8550",
   info = "#ab8550",
   hint = "#576f82",
+  todo = "#578266",
   accent_blue = "#191a20",
   accent_green = "#1c2019",
   accent_red = "#201919",
