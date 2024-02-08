@@ -19,4 +19,5 @@ return {
   require "no-clown-fiesta.groups.whichkey",
   require "no-clown-fiesta.groups.neotest",
   require "no-clown-fiesta.groups.dapui",
+  require "no-clown-fiesta.groups.noice",
 }
