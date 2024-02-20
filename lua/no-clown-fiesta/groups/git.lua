@@ -8,7 +8,7 @@ function M.highlight(palette, opts)
     GitSignsAdd = { fg = palette.sign_add },
     GitSignsChange = { fg = palette.sign_change },
     GitSignsDelete = { fg = palette.sign_delete },
-    GitSignsCurrentLineBlame = { fg = palette.gray }
+    GitSignsCurrentLineBlame = { fg = palette.gray },
   }
 end
 
