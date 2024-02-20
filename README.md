@@ -39,21 +39,22 @@ require("no-clown-fiesta").setup({
 
 - Alpha
 - Dadbod-ui
+- Dap UI
 - Git
 - Hop
+- LSP
 - Lazy
 - Leap
 - Lir
-- LSP
 - Lualine
 - Markdown
 - Mason
 - Neogit
+- Neotest
 - NvimCmp
 - NvimTree
+- Orgmode
 - StatusLine
 - Telescope
 - Treesitter
 - WhichKey
-- Neotest
-- Dap UI
