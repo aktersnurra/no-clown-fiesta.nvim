@@ -1,12 +1,5 @@
 local M = {}
 
-function M.setup(opts)
-  local settings = require "no-clown-fiesta.settings"
-  if opts then
-    settings.set(opts)
-  end
-end
-
 function M.load()
   local settings = require "no-clown-fiesta.settings"
   local opts = settings.opts
@@ -28,6 +21,14 @@ function M.load()
     group = group.highlight(palette, opts)
     util.initialise(group)
   end
+end
+
+function M.setup(opts)
+  local settings = require "no-clown-fiesta.settings"
+  if opts then
+    settings.set(opts)
+  end
+  M.load()
 end
 
 return M
