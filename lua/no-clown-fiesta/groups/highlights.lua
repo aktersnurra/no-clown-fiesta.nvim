@@ -60,7 +60,11 @@ function M.highlight(palette, opts)
     PmenuSbar = { bg = palette.alt_bg },
     PmenuThumb = { bg = palette.light_gray },
     MatchWord = { underline = true },
-    MatchParen = { fg = palette.blue, bg = palette.bg, underline = true },
+    MatchParen = vim.tbl_extend(
+      "force",
+      { fg = palette.blue, bg = palette.bg, underline = true },
+      opts.styles.match_paren
+    ),
     MatchWordCur = { underline = true },
     MatchParenCur = { underline = true },
     Cursor = { fg = palette.cursor_fg, bg = palette.cursor_bg },

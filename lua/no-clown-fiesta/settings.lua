@@ -4,11 +4,12 @@ local DEFAULT = {
   transparent = false,
   styles = {
     comments = {},
-    keywords = {},
     functions = {},
-    variables = {},
-    type = { bold = true },
+    keywords = {},
     lsp = { underline = true },
+    match_paren = {},
+    type = { bold = true },
+    variables = {},
   },
 }
 
