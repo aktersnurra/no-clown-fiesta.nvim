@@ -61,6 +61,8 @@ function M.highlight(palette, opts)
     ["@org.table.delimiter"] = { link = "@punctuation.special", default = true },
     ["@org.table.heading"] = { link = "@markup.heading", default = true },
     ["@org.edit_src"] = { link = "Visual", default = true },
+    ["@org.agenda.scheduled"] = { fg = palette.cyan, default = true },
+
     ["@org.keyword.todo"] = { fg = palette.red, default = true },
     ["@org.keyword.done"] = { fg = palette.sign_add, default = true },
   }
