@@ -3,9 +3,8 @@ local M = {}
 function M.highlight(palette, opts)
   return {
     LeapMatch = { fg = palette.cyan, bold = true },
-    LeapLabelPrimary = { fg = palette.red, bold = true },
-    LeapLabelSecondary = { fg = palette.gray_blue },
-    LeapBackdrop = { fg = palette.gray },
+    LeapLabel = { fg = palette.orange, bold = true },
+    LeapBackdrop = { fg = palette.medium_gray },
   }
 end
 
