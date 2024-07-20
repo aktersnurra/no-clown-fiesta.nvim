@@ -16,6 +16,7 @@ function M.highlight(palette, opts)
     ["@const.macro"] = { fg = palette.cyan },
     ["@constant"] = { fg = palette.white },
     ["@constructor"] = { fg = palette.cyan },
+    ["@diff.delta"] = { fg = palette.orange },
     ["@error"] = { fg = palette.error },
     ["@function"] = vim.tbl_extend(
       "force",
@@ -63,10 +64,12 @@ function M.highlight(palette, opts)
     ["@string"] = { fg = palette.medium_gray_blue },
     ["@string.escape"] = { fg = palette.medium_gray_blue },
     ["@string.regexp"] = { fg = palette.medium_gray_blue },
+    ["@string.special.path"] = { fg = palette.medium_gray_blue },
     ["@string.special.symbol"] = { fg = palette.medium_gray },
     ["@tag"] = { fg = palette.blue },
     ["@tag.attribute"] = { fg = palette.white },
     ["@tag.delimiter"] = { fg = palette.white },
+    ["@text.uri"] = {fg = palette.medium_gray_blue },
     ["@type"] = vim.tbl_extend("force", { fg = palette.white }, opts.styles.type),
     ["@type.builtin"] = { fg = palette.white },
     ["@variable"] = vim.tbl_extend(
