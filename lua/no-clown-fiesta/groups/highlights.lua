@@ -51,6 +51,9 @@ function M.highlight(palette, opts)
     WarningMsg = { fg = palette.error, bg = palette.bg },
     DiffAdd = { bg = palette.accent_green },
     DiffText = { bg = palette.accent_blue },
+    Changed = {
+      fg = palette.sign_change,
+    },
     DiffChange = {
       fg = palette.sign_change,
       bg = palette.accent_blue,
