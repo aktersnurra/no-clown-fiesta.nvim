@@ -16,7 +16,7 @@ function M.highlight(palette, opts)
     ["@const.macro"] = { fg = palette.cyan },
     ["@constant"] = { fg = palette.white },
     ["@constructor"] = { fg = palette.cyan },
-    ["@diff.delta"] = { fg = palette.red },
+    ["@diff.delta"] = { fg = palette.fg, bg = palette.sign_change },
     ["@error"] = { fg = palette.error },
     ["@function"] = vim.tbl_extend(
       "force",
