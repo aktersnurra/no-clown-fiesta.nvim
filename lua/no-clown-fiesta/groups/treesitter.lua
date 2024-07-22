@@ -17,8 +17,8 @@ function M.highlight(palette, opts)
     ["@constant"] = { fg = palette.white },
     ["@constructor"] = { fg = palette.cyan },
     ["@diff.delta"] = {
-      fg = palette.sign_add,
-      bg = palette.accent_green,
+      fg = palette.gray_blue,
+      bg = palette.accent_blue,
       bold = true,
     },
     ["@error"] = { fg = palette.error },
