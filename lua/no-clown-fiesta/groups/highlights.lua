@@ -22,7 +22,8 @@ function M.highlight(palette, opts)
       bg = opts.transparent and palette.none or palette.bg,
     },
     Pmenu = { fg = palette.light_gray, bg = palette.accent },
-    PmenuSel = { fg = palette.blue, bg = palette.alt_bg },
+    PmenuSel = { bg = palette.blue, fg = palette.gray, reverse = true },
+    PmenuMatchSel = { bg = palette.yellow, fg = palette.gray, reverse = true },
     WildMenu = { fg = palette.blue, bg = palette.alt_bg },
     CursorLineNr = {
       fg = palette.light_gray,
