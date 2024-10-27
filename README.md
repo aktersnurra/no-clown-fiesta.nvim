@@ -103,3 +103,4 @@ Other plugin managers are left as an exercise to the reader.
 - Telescope
 - Treesitter
 - WhichKey
+- mini.statusline
