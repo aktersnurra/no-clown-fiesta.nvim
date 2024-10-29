@@ -11,6 +11,7 @@ return {
   require "no-clown-fiesta.groups.lsp",
   require "no-clown-fiesta.groups.markdown",
   require "no-clown-fiesta.groups.mason",
+  require "no-clown-fiesta.groups.mini-statusline",
   require "no-clown-fiesta.groups.neogit",
   require "no-clown-fiesta.groups.neotest",
   require "no-clown-fiesta.groups.noice",
