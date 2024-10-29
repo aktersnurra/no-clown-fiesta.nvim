@@ -28,9 +28,9 @@ require("no-clown-fiesta").setup({
     comments = {},
     functions = {},
     keywords = {},
-    lsp = { underline = true },
+    lsp = {},
     match_paren = {},
-    type = { bold = true },
+    type = {},
     variables = {},
   },
 })
