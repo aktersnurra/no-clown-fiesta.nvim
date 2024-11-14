@@ -1,0 +1,23 @@
+# No clown fiesta ghostty theme
+palette = 0=#151515
+palette = 1=#b46958
+palette = 2=#90A959
+palette = 3=#F4BF75
+palette = 4=#BAD7FF
+palette = 5=#AA759F
+palette = 6=#88AFA2
+palette = 7=#E1E1E1
+palette = 8=#AFAFAF
+palette = 9=#201919
+palette = 10=#1C2019
+palette = 11=#F4BF75
+palette = 12=#191A20
+palette = 13=#AA759F
+palette = 14=#88AFA2
+palette = 15=#E1E1E1
+
+background = #151515
+foreground = #E1E1E1
+cursor-color = #D0D0D0
+selection-background = #E1E1E1
+selection-foreground = #151515
