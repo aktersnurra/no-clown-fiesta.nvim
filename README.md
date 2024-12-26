@@ -97,6 +97,7 @@ Other plugin managers are left as an exercise to the reader.
 - Neogit
 - Neotest
 - NvimCmp
+- BlinkCmp
 - NvimTree
 - Orgmode
 - StatusLine
