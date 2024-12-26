@@ -60,4 +60,5 @@ SUPPORTED PLUGINS                              *no-clown-fiesta-supported_plugin
 *   Treesitter
 *   StatusLine (the default non custom one)
 *   WhichKey
+*   Mini.statusline
 

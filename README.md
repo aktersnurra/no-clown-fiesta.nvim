@@ -28,13 +28,57 @@ require("no-clown-fiesta").setup({
     comments = {},
     functions = {},
     keywords = {},
-    lsp = { underline = true },
+    lsp = {},
     match_paren = {},
-    type = { bold = true },
+    type = {},
     variables = {},
   },
 })
 ```
+
+### Installation
+
+If you are using the lazy, then you can install and configure the plugin like this:
+
+```fnl
+(local opts {:styles {:type {:bold true}
+                      :lsp {:undercurl false}
+                      :match_paren {:underline true}}})
+
+(λ config []
+  (let [plugin (require :no-clown-fiesta)]
+    (plugin.setup opts)
+    (plugin.load)))
+
+{1 :aktersnurra/no-clown-fiesta.nvim :lazy false :priority 1000 : config}
+```
+
+or if you prefer lua:
+
+```lua
+local opts = {
+  styles = {
+    type = { bold = true },
+    lsp = { underline = false },
+    match_paren = { underline = true },
+  },
+}
+
+local function config()
+  local plugin = require "no-clown-fiesta"
+  plugin.setup(opts)
+  return plugin.load()
+end
+
+return {
+  "aktersnurra/no-clown-fiesta.nvim",
+  priority = 1000,
+  config = config,
+  lazy = false,
+}
+```
+
+Other plugin managers are left as an exercise to the reader.
 
 ## Supported Plugins
 
@@ -59,3 +103,4 @@ require("no-clown-fiesta").setup({
 - Telescope
 - Treesitter
 - WhichKey
+- mini.statusline
