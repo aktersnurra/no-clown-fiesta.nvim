@@ -61,4 +61,4 @@ SUPPORTED PLUGINS                              *no-clown-fiesta-supported_plugin
 *   StatusLine (the default non custom one)
 *   WhichKey
 *   Mini.statusline
-
+*   DiffView

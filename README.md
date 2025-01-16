@@ -105,3 +105,4 @@ Other plugin managers are left as an exercise to the reader.
 - Treesitter
 - WhichKey
 - mini.statusline
+- DiffView
