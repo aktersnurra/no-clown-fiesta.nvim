@@ -28,9 +28,10 @@ local colors = {
   info = "#ab8550",
   hint = "#576f82",
   todo = "#578266",
-  accent_blue = "#191a20",
-  accent_green = "#1c2019",
-  accent_red = "#201919",
+  accent_lighter_blue = "#1e222a",
+  accent_blue = "#18191b",
+  accent_green = "#181b18",
+  accent_red = "#1b1818",
 }
 
 return colors

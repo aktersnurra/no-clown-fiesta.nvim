@@ -51,7 +51,7 @@ function M.highlight(palette, opts)
     VisualNOS = { bg = palette.alt_bg },
     WarningMsg = { fg = palette.error, bg = palette.bg },
     DiffAdd = { bg = palette.accent_green },
-    DiffText = { fg = palette.fg, bg = palette.sign_change },
+    DiffText = { fg = palette.fg, bg = palette.accent_lighter_blue },
     Changed = {
       fg = palette.sign_change,
     },

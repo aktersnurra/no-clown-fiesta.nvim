@@ -14,7 +14,7 @@ function M.highlight(palette, opts)
     LazyH1 = { fg = palette.fg, bold = true },
     LazyH2 = { fg = palette.fg },
     LazyNoCond = { fg = palette.blue },
-    LazyNormal = { fg = palette.fg },
+    LazyNormal = { link = "NormalFloat", default = true },
     LazyProgressDone = { fg = palette.cursor_fg },
     LazyProgressTodo = { fg = palette.gray },
     LazyProp = { fg = palette.fg },
