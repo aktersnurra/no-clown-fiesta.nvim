@@ -5,7 +5,7 @@ function M.highlight(palette, opts)
     LazyButton = { fg = palette.fg },
     LazyButtonActive = { fg = palette.fg, bold = true },
     LazyComment = { fg = palette.medium_gray },
-    LazyCommit = { fg = palette.white },
+    LazyCommit = { fg = palette.fg },
     LazyCommitIssue = { fg = palette.red },
     LazyCommitScope = { fg = palette.cyan },
     LazyCommitType = { fg = palette.cyan },

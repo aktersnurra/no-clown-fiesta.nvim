@@ -3,7 +3,7 @@ local M = {}
 function M.highlight(palette, opts)
   return {
     LirFloatNormal = { fg = palette.fg, bg = palette.alt_bg },
-    LirDir = { fg = palette.white },
+    LirDir = { fg = palette.fg },
     LirSymLink = { fg = palette.cyan },
     LirEmptyDirText = { fg = palette.medium_gray },
   }

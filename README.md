@@ -22,6 +22,7 @@ and override these.
 
 ```lua
 require("no-clown-fiesta").setup({
+  theme = "dark", -- supported themes are: dark, dim, light
   transparent = false, -- Enable this to disable the bg color
   styles = {
     -- You can set any of the style values specified for `:h nvim_set_hl`
@@ -41,8 +42,9 @@ require("no-clown-fiesta").setup({
 If you are using the lazy, then you can install and configure the plugin like this:
 
 ```fnl
-(local opts {:styles {:type {:bold true}
-                      :lsp {:undercurl false}
+(local opts {:theme :dark
+             :styles {:type {:bold true}
+                      :lsp {:underline true}
                       :match_paren {:underline true}}})
 
 (λ config []
@@ -57,6 +59,7 @@ or if you prefer lua:
 
 ```lua
 local opts = {
+  theme = "dark",
   styles = {
     type = { bold = true },
     lsp = { underline = false },
@@ -79,6 +82,13 @@ return {
 ```
 
 Other plugin managers are left as an exercise to the reader.
+
+## Themes
+
+This plugin supports three different themes:
+1. dark = default dark theme
+2. dim = low contrast dark theme
+3. light = light version (still under development)
 
 ## Supported Plugins
 

@@ -2,12 +2,12 @@ local M = {}
 
 function M.highlight(palette, opts)
   return {
-    NvimTreeFolderIcon = { fg = palette.white },
+    NvimTreeFolderIcon = { fg = palette.fg },
     NvimTreeIndentMarker = { fg = palette.alt_bg },
     NvimTreeNormal = { fg = palette.light_gray, bg = palette.alt_bg },
     NvimTreeVertSplit = { fg = palette.alt_bg, bg = palette.alt_bg },
-    NvimTreeFolderName = { fg = palette.white },
-    NvimTreeOpenedFolderName = { fg = palette.white, bold = true },
+    NvimTreeFolderName = { fg = palette.fg },
+    NvimTreeOpenedFolderName = { fg = palette.fg, bold = true },
     NvimTreeEmptyFolderName = { fg = palette.medium_gray },
     NvimTreeGitIgnored = { fg = palette.medium_gray },
     NvimTreeImageFile = { fg = palette.light_gray },

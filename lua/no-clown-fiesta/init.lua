@@ -16,13 +16,16 @@ function M.load()
     vim.api.nvim_command "syntax reset"
   end
 
-  vim.o.background = "dark"
+  if opts.theme ~= "white" then
+    vim.o.background = "dark"
+  end
   vim.o.termguicolors = true
   vim.g.colors_name = "no-clown-fiesta"
 
   local util = require "no-clown-fiesta.util"
-  local palette = require "no-clown-fiesta.palette"
+  local palettes = require "no-clown-fiesta.palettes"
   local groups = require "no-clown-fiesta.groups"
+  local palette = palettes[opts.theme]
 
   for _, group in ipairs(groups) do
     group = group.highlight(palette, opts)

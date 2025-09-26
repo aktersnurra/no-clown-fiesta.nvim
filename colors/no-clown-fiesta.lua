@@ -1,1 +1,1 @@
-require("no-clown-fiesta").load()
+require("lua.lualine.themes.no-clown-fiesta-low-contrast").load()

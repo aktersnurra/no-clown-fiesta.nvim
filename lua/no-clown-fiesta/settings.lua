@@ -1,6 +1,7 @@
 local M = {}
 
 local DEFAULT = {
+  theme = "dark",
   transparent = false,
   styles = {
     comments = {},
