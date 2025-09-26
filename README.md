@@ -86,9 +86,9 @@ Other plugin managers are left as an exercise to the reader.
 ## Themes
 
 This plugin supports three different themes:
-1. dark = default dark theme
-2. dim = low contrast dark theme
-3. light = light version (still under development)
+- dark = default dark theme
+- dim = low contrast dark theme
+- light = light version (still under development)
 
 ## Supported Plugins
 
