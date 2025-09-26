@@ -23,9 +23,8 @@ function M.load()
   vim.g.colors_name = "no-clown-fiesta"
 
   local util = require "no-clown-fiesta.util"
-  local palettes = require "no-clown-fiesta.palettes"
+  local palette = require("no-clown-fiesta.palettes").get(opts.theme)
   local groups = require "no-clown-fiesta.groups"
-  local palette = palettes[opts.theme]
 
   for _, group in ipairs(groups) do
     group = group.highlight(palette, opts)

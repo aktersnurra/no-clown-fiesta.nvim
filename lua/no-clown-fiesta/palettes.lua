@@ -1,4 +1,6 @@
-local colors = {
+local M = {}
+
+local palettes = {
   dark = {
     none = "NONE",
     fg = "#E1E1E1",
@@ -103,4 +105,8 @@ local colors = {
   },
 }
 
-return colors
+function M.get(theme)
+  return palettes[theme]
+end
+
+return M
