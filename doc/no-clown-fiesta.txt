@@ -30,6 +30,7 @@ colorscheme. No-clown-fiesta will use these settings, unless you call setup
 and override these.
 >
     require("no-clown-fiesta").setup({
+      theme = "dark", -- supported themes are: dark, dim, light
       transparent = false, -- Enable this to disable the bg color
       styles = { 
         -- You can set any of the style values specified for `:h nvim_set_hl`
